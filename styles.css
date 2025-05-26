@@ -1,0 +1,655 @@
+/* Reset y base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  /* Gradiente con tonos médicos (azul claro a verde claro) */
+  background: linear-gradient(135deg, #e0f7fa 0%, #e0f2f7 100%); /* Muy claro, azulado a verdoso */
+  color: #333; /* Color general del texto (oscuro para legibilidad) */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Estilos de la portada */
+.cover {
+  max-width: 1100px;
+  margin: 40px auto 60px;
+  /* Azul médico semi-transparente */
+  background: rgba(179, 229, 252, 0.2); /* Un azul claro (Light Blue 200) con 20% de opacidad */
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  padding: 30px 40px;
+  backdrop-filter: blur(10px);
+  /* Color de texto cambiado a un azul oscuro/teal para mejor contraste */
+  color: #004d40; /* Un teal oscuro */
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.logo-container img {
+  width: 100px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.university-info {
+  font-family: 'Lora', serif;
+  /* Color cambiado a un azul oscuro/teal para mejor contraste */
+  color: #0077cc; /* Medical Blue */
+}
+
+.university-info h3 {
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-bottom: 4px;
+}
+
+.university-info p {
+  font-weight: 400;
+  font-size: 1rem;
+  opacity: 0.9; /* Aumentada la opacidad para mejor legibilidad */
+}
+
+.main-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.main-title h1 {
+  font-family: 'Lora', serif;
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 8px;
+  /* Color cambiado a un azul oscuro para mejor contraste */
+  color: #004d40; /* Un teal oscuro */
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); /* Sombra más sutil */
+}
+
+.main-title p.subtitle {
+  font-size: 1.2rem;
+  font-weight: 300;
+  /* Color cambiado a un azul oscuro para mejor contraste */
+  color: #0077cc; /* Medical Blue */
+  font-style: italic;
+}
+
+.members-section {
+  /* Teal claro semi-transparente */
+  background: rgba(178, 235, 242, 0.2); /* Un teal claro (Cyan 200) con 20% de opacidad */
+  border-radius: 12px;
+  padding: 20px 30px;
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.15);
+  margin-bottom: 40px;
+}
+
+.members-section h2 {
+  font-family: 'Lora', serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-align: center;
+  /* Color cambiado a un azul oscuro/teal para mejor contraste */
+  color: #004d40; /* Un teal oscuro */
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2); /* Sombra más sutil */
+}
+
+.members-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+  list-style: none;
+}
+
+.members-list li {
+  /* Teal claro semi-transparente */
+  background: rgba(178, 235, 242, 0.3); /* Un teal claro (Cyan 200) con 30% de opacidad */
+  padding: 10px 18px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1rem;
+  /* Color cambiado a un azul oscuro/teal para mejor contraste */
+  color: #004d40; /* Un teal oscuro */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background-color 0.3s ease;
+  cursor: default;
+}
+
+.members-list li i {
+  /* Color de ícono mantenido en azul médico */
+  color: #00bcd4; /* Cyan 500 */
+  font-size: 1.2rem;
+}
+
+.members-list li:hover {
+  /* Color de fondo y texto al pasar el ratón */
+  background: #00bcd4; /* Cyan 500 */
+  color: #004d40; /* Un teal oscuro para el texto */
+  box-shadow: 0 4px 12px rgba(0, 188, 212, 0.7); /* Sombra con el color del hover */
+}
+
+.info-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.info-card {
+  /* Teal claro semi-transparente */
+  background: rgba(178, 235, 242, 0.2); /* Un teal claro (Cyan 200) con 20% de opacidad */
+  border-radius: 12px;
+  padding: 20px 30px;
+  width: 280px;
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.15);
+  font-weight: 600;
+  font-size: 1.1rem;
+  /* Color cambiado a un azul oscuro/teal para mejor contraste */
+  color: #004d40; /* Un teal oscuro */
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.info-card i {
+  /* Color de ícono mantenido en azul médico */
+  color: #00bcd4; /* Cyan 500 */
+  font-size: 1.6rem;
+}
+
+.info-card:hover {
+  /* Color de fondo y texto al pasar el ratón */
+  background: #00bcd4; /* Cyan 500 */
+  color: #004d40; /* Un teal oscuro para el texto */
+  box-shadow: 0 4px 12px rgba(0, 188, 212, 0.7); /* Sombra con el color del hover */
+}
+
+.nutrition-icons {
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.nutrition-icon-container {
+  text-align: center;
+  cursor: default;
+}
+
+.nutrition-icon-circle {
+  /* Colores cambiados a tonos médicos */
+  background: #00bcd4; /* Cyan 500 */
+  color: #004d40; /* Un teal oscuro */
+  font-size: 2.8rem;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 8px;
+  box-shadow: 0 4px 12px rgba(0, 188, 212, 0.7); /* Sombra con el color del círculo */
+  transition: transform 0.3s ease;
+}
+
+.nutrition-icon-container:hover .nutrition-icon-circle {
+  transform: scale(1.15);
+  box-shadow: 0 6px 16px rgba(0, 188, 212, 0.9); /* Sombra más intensa */
+}
+
+.nutrition-icon-label {
+  font-weight: 600;
+  /* Color cambiado a un azul oscuro/teal para mejor contraste */
+  color: #004d40; /* Un teal oscuro */
+  font-size: 1rem;
+  user-select: none;
+}
+
+/* Footer */
+.footer {
+  background: rgba(0, 0, 0, 0.4); /* Ligeramente más oscuro para contraste */
+  /* Color cambiado a un azul oscuro/teal para mejor contraste */
+  color: #004d40; /* Un teal oscuro */
+  text-align: center;
+  padding: 16px 0;
+  font-size: 0.9rem;
+  font-weight: 400;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.4);
+  user-select: none;
+}
+
+/* Estilos para las secciones de sistemas */
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px; /* Añadir padding horizontal */
+}
+
+.sistema-card {
+  background: #fff; /* Fondo blanco limpio */
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  margin: 2rem 0;
+  padding: 2rem;
+  /* Borde por defecto - gris médico */
+  border-left: 10px solid #bdbdbd; /* Gris 400 */
+  color: #222; /* Color oscuro para todo el texto dentro de la tarjeta (buena legibilidad) */
+  font-family: 'Montserrat', sans-serif; /* Asegurar la fuente */
+}
+
+/* Colores de borde según el sistema - Paleta médica */
+.sistema-cardiovascular { border-left-color: #e57373; } /* Rojo suave médico */
+.sistema-respiratorio { border-left-color: #64b5f6; } /* Azul claro médico */
+.sistema-digestivo { border-left-color: #aed581; } /* Verde claro médico */
+.sistema-endocrino { border-left-color: #ba68c8; } /* Morado suave médico */
+.sistema-excretor { border-left-color: #81c784; } /* Verde médico */
+.sistema-otros { border-left-color: #90a4ae; } /* Gris azulado médico */
+
+
+.sistema-card h2 {
+  /* Color azul médico */
+  color: #0077cc; /* Medical Blue */
+  font-size: 22px;
+  /* Borde inferior que coincide con el color del H2 */
+  border-bottom: 2px solid #0077cc;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif; /* Asegurar la fuente */
+}
+
+.sistema-card h3 {
+  color: #555; /* Color para los subtítulos H3 (mantener para legibilidad) */
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-family: 'Montserrat', sans-serif; /* Asegurar la fuente */
+}
+
+.sistema-card p,
+.sistema-card ul,
+.sistema-card ol,
+.sistema-card table {
+    font-family: 'Montserrat', sans-serif; /* Aplicar fuente a todo el contenido */
+    color: #444; /* Color de texto más suave (mantener para legibilidad) */
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.icon {
+  font-size: 30px;
+  margin-right: 10px;
+  /* Color azul médico */
+  color: #0077cc; /* Medical Blue */
+}
+
+.accordion {
+  background-color: #f1f1f1; /* Fondo claro */
+  color: #444; /* Texto oscuro */
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  font-size: 1rem; /* Ajustar tamaño de fuente */
+  transition: 0.4s;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif; /* Asegurar la fuente */
+}
+
+.accordion:hover {
+  /* Fondo al pasar el ratón - azul claro médico */
+  background-color: #e3f2fd; /* Light Blue 50 */
+}
+
+.active, .accordion:focus {
+  /* Fondo activo/focus - azul médico */
+  background-color: #0077cc; /* Medical Blue */
+  color: white; /* Texto blanco */
+}
+
+.panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.3s ease;
+  padding: 0 18px;
+  background-color: #f9f9f9;
+  margin-bottom: 10px;
+  border-left: 5px solid #0077cc;
+}
+
+.panel ul {
+  list-style-type: disc; /* Usar discos para listas */
+  padding-left: 20px; /* Añadir indentación */
+}
+
+.panel li {
+  padding: 3px 0; /* Ajustar padding */
+  font-size: 1rem; /* Ajustar tamaño de fuente */
+  color: #666; /* Color de texto (mantener para legibilidad) */
+}
+
+.panel table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  font-family: 'Montserrat', sans-serif; /* Asegurar la fuente */
+}
+
+.table, .table th, .table td {
+  color: #222; /* Texto oscuro */
+  border: 1px solid #ddd; /* Añadir bordes a las celdas (gris claro) */
+}
+
+.table th {
+  /* Fondo del encabezado de tabla - azul médico */
+  background-color: #0077cc; /* Medical Blue */
+  color: white; /* Texto blanco */
+  font-family: 'Montserrat', sans-serif; /* Asegurar la fuente */
+}
+
+/* Estilos para el buscador */
+#searchBox {
+  width: 80%; /* Ajustar ancho */
+  max-width: 500px; /* Ancho máximo */
+  padding: 12px; /* Ajustar padding */
+  font-size: 1rem; /* Ajustar tamaño de fuente */
+  margin: 20px auto; /* Ajustar margen */
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif; /* Asegurar la fuente */
+}
+
+/* Estilos para la navegación del índice */
+header nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+header nav ul li {
+  display: inline-block; /* Mostrar en línea */
+  margin: 0 10px; /* Ajustar margen */
+}
+
+header nav ul li a {
+  /* Color de enlace cambiado a un azul oscuro/teal para mejor contraste */
+  color: #004d40; /* Un teal oscuro */
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  /* Color al pasar el mouse - teal médico */
+  color: #4db6ac; /* Lighter Teal */
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cover {
+    padding: 20px;
+    margin: 20px auto 40px;
+  }
+  .header-top {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+  .logo-container img {
+    width: 80px;
+  }
+  .university-info h3 {
+    font-size: 1.5rem;
+  }
+  .university-info p {
+    font-size: 0.9rem;
+  }
+  .main-title h1 {
+    font-size: 2.4rem;
+  }
+  .main-title p.subtitle {
+    font-size: 1rem;
+  }
+  .members-list {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .members-list li {
+    font-size: 0.9rem;
+  }
+  .info-grid {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .info-card {
+    width: 90%;
+    max-width: 350px;
+    font-size: 1rem;
+  }
+  .nutrition-icons {
+    gap: 24px;
+  }
+  .nutrition-icon-circle {
+    font-size: 2rem;
+    width: 60px;
+    height: 60px;
+  }
+  .nutrition-icon-label {
+    font-size: 0.9rem;
+  }
+  main {
+    padding: 0 10px;
+  }
+  .sistema-card {
+    padding: 1.5rem;
+  }
+  .sistema-card h2 {
+    font-size: 1.8rem;
+  }
+  .sistema-card h3 {
+    font-size: 1.3rem;
+  }
+  .panel p,
+  .panel li,
+  .panel table {
+    font-size: 0.9rem;
+  }
+  .accordion {
+    font-size: 0.9rem;
+  }
+  #searchBox {
+    width: 90%;
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+}
+/* Estilos para el botón del acordeón */
+.accordion {
+  background-color: #eee; /* Color de fondo por defecto */
+  color: #444; /* Color del texto */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+  padding: 18px; /* Espaciado interno */
+  width: 100%; /* Ocupa todo el ancho disponible */
+  border: none; /* Sin borde */
+  text-align: left; /* Alinea el texto a la izquierda */
+  outline: none; /* Elimina el contorno al enfocar */
+  font-size: 18px; /* Tamaño de fuente */
+  transition: 0.4s; /* Transición suave para cambios de estilo */
+  margin-top: 5px; /* Espacio superior */
+}
+
+/* Estilo al pasar el mouse sobre el botón o cuando está activo */
+.accordion:hover, .accordion.active {
+  background-color: #ccc; /* Cambia el color de fondo al pasar el mouse o estar activo */
+}
+
+/* Estilo para el panel de contenido */
+.panel {
+  padding: 0 18px; /* Espaciado interno horizontal */
+  background-color: white; /* Fondo del panel */
+  max-height: 0; /* Inicialmente oculto */
+  overflow: hidden; /* Oculta el contenido que excede maxHeight */
+  transition: max-height 0.2s ease-out; /* Transición suave para la altura */
+}
+
+/* Puedes añadir un indicador visual (como un + / - o flecha) */
+/* Ejemplo con un pseudo-elemento */
+.accordion:after {
+  content: '\02795'; /* Código para un signo más (+) */
+  font-size: 13px;
+  color: #777;
+  float: right; /* Alinea a la derecha */
+  margin-left: 5px;
+}
+
+.accordion.active:after {
+  content: "\2796"; /* Código para un signo menos (-) cuando está activo */
+}
+/* Estilos para el botón Volver Arriba */
+#backToTopBtn {
+  display: none; /* Oculto por defecto */
+  position: fixed; /* Posición fija en la ventana */
+  bottom: 20px; /* A 20px del borde inferior */
+  right: 20px; /* A 20px del borde derecho */
+  z-index: 100; /* Asegura que esté por encima de otros elementos */
+  border: none; /* Sin borde */
+  outline: none; /* Sin contorno al enfocar */
+  background-color: #007bff; /* Color de fondo (puedes usar tu color principal) */
+  color: white; /* Color del icono */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+  padding: 15px; /* Espaciado interno */
+  border-radius: 50%; /* Forma redonda */
+  font-size: 20px; /* Tamaño del icono */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+  transition: background-color 0.3s ease; /* Transición suave para el color */
+  text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+/* Estilo al pasar el mouse sobre el botón */
+#backToTopBtn:hover {
+  background-color: #0056b3; /* Color de fondo más oscuro al pasar el mouse */
+}
+.table {
+  width: 100%;
+  overflow-x: auto;
+  display: block;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.table th,
+.table td {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+.page-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.95); /* fondo blanco semi-transparente */
+  padding: 15px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6px); /* efecto elegante */
+}
+
+.page-header nav ul a {
+  font-weight: 600;
+  color: #0077cc;
+  transition: color 0.3s ease;
+}
+
+.page-header nav ul a:hover {
+  color: #004d40;
+}
+/* Portada animada */
+.portada-animada {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(135deg, #00bcd4, #004d40);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  font-family: 'Lora', serif;
+}
+
+.portada-contenido {
+  text-align: center;
+  animation: zoomIn 1.2s ease-in-out;
+  max-width: 90%;
+}
+
+.logo-portada {
+  width: 120px;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+.portada-contenido h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.portada-contenido p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+.portada-contenido button {
+  background-color: white;
+  color: #0077cc;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.portada-contenido button:hover {
+  background-color: #e0f2f7;
+  color: #004d40;
+}
+
+@keyframes zoomIn {
+  0% { transform: scale(0.85); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
