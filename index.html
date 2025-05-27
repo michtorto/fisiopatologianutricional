@@ -2,35 +2,29 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portafolio académico de Fisiopatología Nutricional de estudiantes de la UAN. Incluye definiciones, fisiopatología, tratamientos y más.">
     <title>Portafolio Fisiopatología Nutricional - UAN</title>
-    <!-- Google Fonts y otros enlaces -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Lora:wght@400;500&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body> <!-- <--- Aquí abre el único <body> -->
-<div id="portadaAnimada" class="portada-animada">
-  <div class="portada-contenido">
-    <img src="https://images.seeklogo.com/logo-png/17/1/universidad-autonoma-de-nayarit-logo-png_seeklogo-172981.png" alt="Logo UAN" class="logo-portada">
-    <h1>Portafolio de Fisiopatología Nutricional</h1>
-    <p>Licenciatura en Nutrición – Universidad Autónoma de Nayarit</p>
-    <button onclick="entrarSitio()">Comenzar recorrido</button>
-  </div>
-</div>
+<body>
+    <div id="portadaAnimada" class="portada-animada">
+        <div class="portada-contenido">
+            <img src="https://images.seeklogo.com/logo-png/17/1/universidad-autonoma-de-nayarit-logo-png_seeklogo-172981.png" alt="Logo UAN" class="logo-portada">
+            <h1>Portafolio de Fisiopatología Nutricional</h1>
+            <p>Licenciatura en Nutrición – Universidad Autónoma de Nayarit</p>
+            <button onclick="entrarSitio()">Comenzar recorrido</button>
+        </div>
+    </div>
 
-
-    <!-- Botón Volver Arriba (Debe estar dentro del body) -->
-    <a href="#" id="backToTopBtn" title="Volver arriba">
-        <i class="fas fa-arrow-up"></i>
-    </a>
-
-    <!-- Todo tu contenido principal debe ir aquí dentro -->
+   
     <div class="cover" role="main" aria-label="Portada del Portafolio de Fisiopatología Nutricional">
         <header class="header-top">
             <div class="logo-container">
-                <img src="https://images.seeklogo.com/logo-png/17/1/universidad-autonoma-de-nayarit-logo-png_seeklogo-172981.png" alt="Logo Universidad Autónoma de Nayarit" />
+                <img src="https://images.seeklogo.com/logo-png/17/1/universidad-autonoma-de-nayarit-logo-png_seeklogo-172981.png" alt="Logo Universidad Autónoma de Nayarit">
             </div>
             <div class="university-info">
                 <h3>Universidad Autónoma de Nayarit</h3>
@@ -50,8 +44,8 @@
                 <li><i class="fas fa-user-graduate" aria-hidden="true"></i><span>Valeria Michell Villanueva Tortolero</span></li>
                 <li><i class="fas fa-user-graduate" aria-hidden="true"></i><span>Tianna Paulet Tirado Uder</span></li>
                 <li><i class="fas fa-user-graduate" aria-hidden="true"></i><span>Nicole Alejandra Flores Quiroga</span></li>
-                <li><i class="fas fa-user-graduate" aria-hidden=\"true\"></i><span>Sergio Saiyd Saldana</span></li>
-                <li><i class=\"fas fa-user-graduate\" aria-hidden=\"true\"></i><span>Diego Espíritu Medina</span></li>
+                <li><i class="fas fa-user-graduate" aria-hidden="true"></i><span>Sergio Saiyd Saldana</span></li>
+                <li><i class="fas fa-user-graduate" aria-hidden="true"></i><span>Diego Espíritu Medina</span></li>
             </ul>
         </section>
 
@@ -99,40 +93,34 @@
         </section>
     </div>
 
-   <footer class="footer" role="contentinfo">
-    <p>Ciudad de la Cultura "Amado Nervo" – Tepic, Nayarit, México</p>
-    <p>© 2025 - Portafolio de Fisiopatología Nutricional | UAN</p>
-</footer>
+    <header class="page-header" role="banner">
+        <h1 style="text-align: center; margin-top: 30px;">Índice</h1>
+        <div style="text-align: center; margin: 20px 0;">
 
 
-    <!-- Los scripts deben ir al final del body -->
+            <input type="text" id="searchBox" placeholder="Buscar en el contenido..." onkeyup="buscarTexto()" style="padding: 10px; width: 80%; max-width: 500px; border-radius: 8px; border: 1px solid #ccc;">
+        </div>
+        <nav aria-label="Índice de secciones">
+            <ul style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; list-style: none; padding: 0;">
+                <li><a href="#cardiovascular">🫀 Sistema Cardiovascular</a></li>
+                <li><a href="#respiratorio">💨 Sistema Respiratorio</a></li>
+                <li><a href="#digestivo">🍽 Sistema Digestivo</a></li>
+                <li><a href="#endocrino">🧪 Sistema Endocrino</a></li>
+                <li><a href="#excretor">💧 Sistema Excretor</a></li>
+                <li><a href="#otros">📚 Otros Temas</a></li>
+            </ul>
+        </nav>
+    </header>
+<a href="#" id="backToTopBtn" title="Volver arriba">
+  <i class="fas fa-arrow-up"></i>
+</a>
+
+   
     <script src="script.js"></script>
 
-<header class="page-header" role="banner">
-    <h1 style="text-align: center; margin-top: 30px;">Índice</h1>
+  </body> 
 
-    <div style="text-align: center; margin: 20px 0;">
-        <input type="text" id="searchBox" placeholder="Buscar en el contenido..." onkeyup="buscarTexto()" style="padding: 10px; width: 80%; max-width: 500px; border-radius: 8px; border: 1px solid #ccc;">
-    </div>
-
-    <nav aria-label="Índice de secciones">
-        <ul style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; list-style: none; padding: 0;">
-            <li><a href="#cardiovascular">🫀 Sistema Cardiovascular</a></li>
-            <li><a href="#respiratorio">💨 Sistema Respiratorio</a></li>
-            <li><a href="#digestivo">🍽 Sistema Digestivo</a></li>
-            <li><a href="#endocrino">🧪 Sistema Endocrino</a></li>
-            <li><a href="#excretor">💧 Sistema Excretor</a></li>
-            <li><a href="#otros">📚 Otros Temas</a></li>
-        </ul>
-    </nav>
-</header>
-
-
-</body> <!-- <--- Aquí cierra el único <body> -->
-</html>
-
-  
-       <main>
+<main>
   
  <section id="cardiovascular" class="sistema-card sistema-cardiovascular">
   <h2><i class="fas fa-heartbeat icon"></i> Sistema Cardiovascular</h2>
@@ -142,7 +130,7 @@
 
     <button class="accordion">1. Definición</button>
     <div class="panel">
-<img src="img/insuficiencia cardiaca.svg" alt="Diagrama de Fisiopatología Cardiovascular" style="max-width: 100%; height: auto; display: block; margin: 15px auto;">
+<img src="img/insuficiencia cardiaca.svg" alt="Diagrama de Fisiopatología Cardiovascular" style="max-width: 100%; height: auto; display: block; margin: 15px auto;"loading="lazy">
       <p>La insuficiencia cardiaca congestiva crónica (ICC) es un síndrome clínico complejo que resulta de cualquier trastorno estructural o funcional que deteriora la capacidad del corazón para llenarse o expulsar sangre adecuadamente. Se caracteriza por la incapacidad del corazón para mantener un gasto cardíaco suficiente para satisfacer las demandas metabólicas del organismo, lo que provoca síntomas como disnea, fatiga y retención de líquidos.</p>
     </div>
 
@@ -355,7 +343,7 @@
     <h3>Cardiopatía Isquémica</h3>
     <button class="accordion">1. Definición</button>
     <div class="panel">
-<img src="img/Isquémica.svg" alt="Diagrama de Fisiopatología Cardiovascular" style="max-width: 100%; height: auto; display: block; margin: 20px auto;">
+<img src="img/Isquémica.svg" alt="Diagrama de Fisiopatología Cardiovascular" style="max-width: 100%; height: auto; display: block; margin: 20px auto;"loading="lazy">
       <p>La cardiopatía isquémica es un conjunto de trastornos caracterizados por un desequilibrio entre el aporte y la demanda de oxígeno al miocardio, generalmente causado por la obstrucción de las arterias coronarias debido a la ateroesclerosis. Incluye diversas manifestaciones clínicas como angina estable, angina inestable, infarto agudo de miocardio y muerte súbita cardíaca.</p>
     </div>
 
@@ -534,7 +522,7 @@
     <h3>Síndrome Metabólico</h3>
     <button class="accordion">1. Definición</button>
     <div class="panel">
-<img src="img/sindrome.svg" alt="Diagrama de Fisiopatología Cardiovascular" style="max-width: 100%; height: auto; display: block; margin: 20px auto;">
+<img src="img/sindrome.svg" alt="Diagrama de Fisiopatología Cardiovascular" style="max-width: 100%; height: auto; display: block; margin: 20px auto;"loading="lazy">
       <p>El síndrome metabólico es un conjunto de factores de riesgo metabólicos interrelacionados que aumentan significativamente el riesgo de desarrollar enfermedades cardiovasculares y diabetes mellitus tipo 2. Según los criterios del NCEP ATP III, se diagnostica cuando están presentes al menos tres de los siguientes factores: obesidad abdominal, hipertrigliceridemia, HDL-colesterol bajo, hipertensión arterial y glucemia en ayunas elevada.</p>
     </div>
 
@@ -708,7 +696,7 @@
     <h3>Dislipidemia y Ateroesclerosis</h3>
     <button class="accordion">1. Definición</button>
     <div class="panel">
-<img src="img/Dislipidemia y ateroesclerosis.svg" alt="Diagrama de Fisiopatología Cardiovascular" style="max-width: 100%; height: auto; display: block; margin: 20px auto;">
+<img src="img/Dislipidemia y ateroesclerosis.svg" alt="Diagrama de Fisiopatología Cardiovascular" style="max-width: 100%; height: auto; display: block; margin: 20px auto;"loading="lazy">
 
       <p>La dislipidemia es un trastorno del metabolismo lipídico caracterizado por alteraciones cuantitativas o cualitativas de las lipoproteínas plasmáticas. Puede manifestarse como elevación del colesterol total, LDL-colesterol o triglicéridos, o como disminución del HDL-colesterol. La ateroesclerosis es el proceso patológico progresivo caracterizado por la acumulación de lípidos, células inflamatorias y tejido fibroso en la pared arterial, formando placas que obstruyen el flujo sanguíneo y pueden desencadenar eventos cardiovasculares.</p>
     </div>
@@ -886,7 +874,7 @@
     <h3>Obesidad</h3>
     <button class="accordion">1. Definición</button>
     <div class="panel">
-<img src="img/Obesidad.svg" alt="Diagrama de Fisiopatología Cardiovascular" style="max-width: 100%; height: auto; display: block; margin: 20px auto;">
+<img src="img/Obesidad.svg" alt="Diagrama de Fisiopatología Cardiovascular" style="max-width: 100%; height: auto; display: block; margin: 20px auto;"loading="lazy">
       <p>La obesidad es una enfermedad crónica y multifactorial caracterizada por un exceso de tejido adiposo que compromete la salud. Se define clínicamente por un índice de masa corporal (IMC) ≥30 kg/m². Se clasifica en diferentes grados: obesidad grado I (IMC 30-34.9), grado II (IMC 35-39.9) y grado III u obesidad mórbida (IMC ≥40). La distribución de la grasa corporal, especialmente la acumulación visceral, es un factor determinante en el riesgo de complicaciones metabólicas asociadas.</p>
     </div>
 
@@ -1036,7 +1024,7 @@
     <h3>Diabetes Mellitus</h3>
     <button class="accordion">1. Definición</button>
     <div class="panel">
-<img src="img/Diabetes mellitus.svg" alt="Diagrama de Fisiopatología Cardiovascular" style="max-width: 100%; height: auto; display: block; margin: 20px auto;">
+<img src="img/Diabetes mellitus.svg" alt="Diagrama de Fisiopatología Cardiovascular" style="max-width: 100%; height: auto; display: block; margin: 20px auto;"loading="lazy">
       <p>La diabetes mellitus es un grupo de trastornos metabólicos caracterizados por hiperglucemia crónica resultante de defectos en la secreción de insulina, en su acción, o ambas. Se clasifica principalmente en diabetes tipo 1 (destrucción autoinmune de células β pancreáticas), diabetes tipo 2 (resistencia a la insulina con déficit secretor relativo), diabetes gestacional y otros tipos específicos. La hiperglucemia crónica se asocia con daño a largo plazo en diversos órganos, especialmente ojos, riñones, nervios, corazón y vasos sanguíneos.</p>
     </div>
 
@@ -1272,7 +1260,7 @@
     <h3>Hipertensión Arterial</h3>
     <button class="accordion">1. Definición</button>
     <div class="panel">
-<img src="img/Hipertensión Arterial.svg" alt="Diagrama de Fisiopatología Cardiovascular" style="max-width: 100%; height: auto; display: block; margin: 20px auto;">
+<img src="img/Hipertensión Arterial.svg" alt="Diagrama de Fisiopatología Cardiovascular" style="max-width: 100%; height: auto; display: block; margin: 20px auto;"loading="lazy">
 
       <p>La hipertensión arterial (HTA) es una enfermedad crónica caracterizada por un aumento sostenido de la presión arterial por encima de los valores considerados normales. Según las guías actuales, se define como presión arterial sistólica ≥130 mmHg y/o presión arterial diastólica ≥80 mmHg. Se clasifica en diferentes estadios según la severidad y puede ser primaria (esencial) en aproximadamente el 90-95% de los casos, o secundaria cuando existe una causa identificable. Constituye el principal factor de riesgo modificable para enfermedades cardiovasculares y cerebrovasculares.</p>
     </div>
@@ -1488,7 +1476,7 @@
     <h3>Insuficiencia Respiratoria</h3>
     <button class="accordion">1. Definición</button>
     <div class="panel">
-<img src="img/Insuficiencia Respiratoria.svg" alt="Diagrama de Fisiopatología Cardiovascular" style="max-width: 100%; height: auto; display: block; margin: 20px auto;">
+<img src="img/Insuficiencia Respiratoria.svg" alt="Diagrama de Fisiopatología Cardiovascular" style="max-width: 100%; height: auto; display: block; margin: 20px auto;"loading="lazy">
 
       <p>La insuficiencia respiratoria es un síndrome caracterizado por la incapacidad del sistema respiratorio para mantener un adecuado intercambio gaseoso, resultando en hipoxemia (PaO₂ &lt; 60 mmHg) y/o hipercapnia (PaCO₂ &gt; 45 mmHg) en reposo, a nivel del mar y respirando aire ambiente. Se clasifica en insuficiencia respiratoria aguda (IRA) cuando se desarrolla en minutos u horas, o crónica (IRC) cuando evoluciona durante semanas o meses.</p>
     </div>
@@ -1642,7 +1630,7 @@
     <h3>EPOC (Enfermedad Pulmonar Obstructiva Crónica)</h3>
     <button class="accordion">1. Definición</button>
     <div class="panel">
-<img src="img/epoc.svg" alt="Diagrama de Fisiopatología Cardiovascular" style="max-width: 100%; height: auto; display: block; margin: 20px auto;">
+<img src="img/epoc.svg" alt="Diagrama de Fisiopatología Cardiovascular" style="max-width: 100%; height: auto; display: block; margin: 20px auto;"loading="lazy">
 
       <p>La EPOC es una enfermedad respiratoria crónica, prevenible y tratable, caracterizada por síntomas respiratorios persistentes y limitación del flujo aéreo debido a anomalías de las vías respiratorias y/o alveolares, generalmente causadas por una exposición significativa a partículas o gases nocivos. La limitación al flujo aéreo es progresiva y no completamente reversible.</p>
     </div>
@@ -1818,7 +1806,7 @@
 <section id="excretor" class="sistema-card sistema-excretor">
   <h2><i class="fas fa-kidneys icon"></i> Sistema Excretor y Equilibrio Ácido-Base</h2>
   
-<img src="img/Sistema Excretor y Equilibrio Ácido-Base.svg" alt="Diagrama de Fisiopatología Cardiovascular" style="max-width: 100%; height: auto; display: block; margin: 20px auto;">
+<img src="img/Sistema Excretor y Equilibrio Ácido-Base.svg" alt="Diagrama de Fisiopatología Cardiovascular" style="max-width: 100%; height: auto; display: block; margin: 20px auto;"loading="lazy">
 
 
 <article>
@@ -1949,7 +1937,7 @@
     <h3>Insuficiencia Renal Aguda (IRA)</h3>
     <button class="accordion">1. Definición</button>
     <div class="panel">
-<img src="img/Insuficiencia Renal Aguda .svg" alt="Diagrama de Fisiopatología Cardiovascular" style="max-width: 100%; height: auto; display: block; margin: 20px auto;">
+<img src="img/Insuficiencia Renal Aguda .svg" alt="Diagrama de Fisiopatología Cardiovascular" style="max-width: 100%; height: auto; display: block; margin: 20px auto;"loading="lazy">
       <p>La insuficiencia renal aguda (IRA), también conocida como lesión renal aguda (LRA), es un síndrome clínico caracterizado por un deterioro rápido (horas a días) de la función renal, que provoca acumulación de productos nitrogenados (urea, creatinina) y alteraciones en el equilibrio hidroelectrolítico y ácido-base. Se clasifica según su etiología en prerrenal, intrarrenal y postrenal.</p>
     </div>
 
@@ -2077,7 +2065,7 @@
     <h3>Insuficiencia Renal Crónica (IRC)</h3>
     <button class="accordion">1. Definición</button>
     <div class="panel">
-<img src="img/Insuficiencia Renal Cronica.svg" alt="Diagrama de Fisiopatología Cardiovascular" style="max-width: 100%; height: auto; display: block; margin: 20px auto;">
+<img src="img/Insuficiencia Renal Cronica.svg" alt="Diagrama de Fisiopatología Cardiovascular" style="max-width: 100%; height: auto; display: block; margin: 20px auto;"loading="lazy">
       <p>La insuficiencia renal crónica (IRC) o enfermedad renal crónica (ERC) es un trastorno caracterizado por una disminución progresiva e irreversible de la función renal, definida por una tasa de filtración glomerular (TFG) &lt; 60 mL/min/1,73 m² durante al menos 3 meses, y/o la presencia de marcadores de daño renal (albuminuria, alteraciones en el sedimento urinario, alteraciones electrolíticas, anomalías estructurales o histológicas, o antecedente de trasplante renal).</p>
     </div>
 
@@ -2257,7 +2245,7 @@
     <h3>Infecciones del Tracto Urinario (ITU)</h3>
     <button class="accordion">1. Definición</button>
     <div class="panel">
-<img src="img/Fisiopatología de las vías urinarias.svg" alt="Diagrama de Fisiopatología Cardiovascular" style="max-width: 100%; height: auto; display: block; margin: 20px auto;">
+<img src="img/Fisiopatología de las vías urinarias.svg" alt="Diagrama de Fisiopatología Cardiovascular" style="max-width: 100%; height: auto; display: block; margin: 20px auto;"loading="lazy">
       <p>Las infecciones del tracto urinario (ITU) son un conjunto de entidades clínicas caracterizadas por la colonización y multiplicación de microorganismos, generalmente bacterias, en el tracto urinario con invasión tisular y respuesta inflamatoria. Pueden afectar a la vía urinaria baja (cistitis, uretritis) o alta (pielonefritis), y clasificarse como no complicadas o complicadas según la presencia de factores de riesgo estructurales o funcionales.</p>
     </div>
 
@@ -2435,7 +2423,7 @@
     <h3>Litiasis Renal (Nefrolitiasis)</h3>
     <button class="accordion">1. Definición</button>
     <div class="panel">
-<img src="img/Litiasis renal.svg" alt="Diagrama de Fisiopatología Cardiovascular" style="max-width: 100%; height: auto; display: block; margin: 20px auto;">
+<img src="img/Litiasis renal.svg" alt="Diagrama de Fisiopatología Cardiovascular" style="max-width: 100%; height: auto; display: block; margin: 20px auto;"loading="lazy">
 
       <p>La litiasis renal o nefrolitiasis es una enfermedad caracterizada por la formación de cálculos o concreciones sólidas (piedras) en el riñón o en las vías urinarias, compuestos por sustancias cristalinas y matriz orgánica. Estos cálculos pueden variar en tamaño, composición y localización, causando diversos grados de obstrucción y sintomatología.</p>
     </div>
@@ -2639,10 +2627,11 @@
 </section>
 <section id="digestivo" class="sistema-card sistema-digestivo">
   <h2><i class="fas fa-stomach icon"></i> Sistema Digestivo</h2>
-<img src="img/digestivo.svg" alt="Diagrama de Fisiopatología Cardiovascular" style="max-width: 100%; height: auto; display: block; margin: 20px auto;">
+<img src="img/digestivo.svg" alt="Diagrama de Fisiopatología Cardiovascular" style="max-width: 100%; height: auto; display: block; margin: 20px auto;"loading="lazy">
     <h3>Trastornos de la Motilidad y del Tránsito Digestivo</h3>
     <button class="accordion">1. Definición</button>
     <div class="panel">
+<img src="img/Trastornos de la Motilidad y del Tránsito Digestivo.svg" alt="Diagrama de Fisiopatología Cardiovascular" style="max-width: 100%; height: auto; display: block; margin: 20px auto;""loading="lazy">
       <p>Los trastornos de la motilidad y del tránsito digestivo comprenden un grupo heterogéneo de alteraciones caracterizadas por anomalías en la contracción muscular coordinada, la propulsión y el tránsito del contenido a lo largo del tubo digestivo. Estos trastornos pueden afectar cualquier segmento del tracto gastrointestinal (esófago, estómago, intestino delgado, colon) y manifestarse como hipermotilidad, hipomotilidad o motilidad descoordinada.</p>
     </div>
 
@@ -2929,6 +2918,7 @@
     <h3>Trastornos de las Secreciones Gástrica e Intestinal</h3>
     <button class="accordion">1. Definición</button>
     <div class="panel">
+<img src="img/Trastornos de las Secreciones Gástrica e Intestinal.svg" alt="Diagrama de Fisiopatología Cardiovascular" style="max-width: 100%; height: auto; display: block; margin: 20px auto;""loading="lazy">
       <p>Los trastornos de las secreciones gástrica e intestinal comprenden un grupo de alteraciones caracterizadas por anomalías en la producción, composición o regulación de las secreciones digestivas. Estas secreciones incluyen ácido clorhídrico, pepsinógeno, factor intrínseco, bicarbonato, enzimas pancreáticas, bilis y moco, entre otras. Los trastornos pueden manifestarse como hipersecreción, hiposecreción o alteración cualitativa de estas sustancias, afectando los procesos de digestión y absorción de nutrientes.</p>
     </div>
 
@@ -3221,6 +3211,7 @@
     <h3>Manifestaciones de la Patología Digestiva</h3>
     <button class="accordion">1. Definición</button>
     <div class="panel">
+<img src="img/Manifestaciones de la Patología Digestiva.svg" alt="Diagrama de Fisiopatología Cardiovascular" style="max-width: 100%; height: auto; display: block; margin: 20px auto;""loading="lazy">
       <p>Las manifestaciones de la patología digestiva comprenden un conjunto de signos y síntomas que reflejan alteraciones en la estructura o función del tracto gastrointestinal. Estas manifestaciones son diversas y pueden presentarse de forma aguda o crónica, localizada o difusa, y con diferentes grados de severidad. Incluyen síntomas como dolor abdominal, náuseas, vómitos, alteraciones del tránsito intestinal, hemorragia digestiva, ictericia, entre otros, que pueden ser expresión de múltiples enfermedades digestivas subyacentes.</p>
     </div>
 
@@ -3603,6 +3594,7 @@
     <h3>Esofagitis</h3>
     <button class="accordion">1. Definición</button>
     <div class="panel">
+<img src="img/Esofagitis.svg" alt="Diagrama de Fisiopatología Cardiovascular" style="max-width: 100%; height: auto; display: block; margin: 20px auto;""loading="lazy">
       <p>La esofagitis es la inflamación de la mucosa esofágica que puede ser aguda o crónica. Se caracteriza por la presencia de eritema, edema, erosiones o úlceras en la mucosa esofágica, causando síntomas como pirosis, dolor retroesternal, disfagia y odinofagia. Existen varios tipos según su etiología: esofagitis por reflujo (la más común), esofagitis infecciosa, esofagitis eosinofílica, esofagitis por píldoras, esofagitis por cáusticos y esofagitis por radiación.</p>
     </div>
 
@@ -3955,6 +3947,7 @@
     <h3>Hernia Hiatal</h3>
     <button class="accordion">1. Definición</button>
     <div class="panel">
+<img src="img/Hernia Hiatal.svg" alt="Diagrama de Fisiopatología Cardiovascular" style="max-width: 100%; height: auto; display: block; margin: 20px auto;""loading="lazy">
       <p>La hernia hiatal es una condición anatómica caracterizada por el desplazamiento de una porción del estómago (y ocasionalmente otros órganos abdominales) hacia la cavidad torácica a través del hiato esofágico del diafragma. Se clasifica principalmente en tres tipos: hernia por deslizamiento (tipo I, la más común, 90%), hernia paraesofágica (tipo II) y hernia mixta (tipo III). En casos extremos, puede existir una hernia tipo IV con migración de otros órganos además del estómago.</p>
     </div>
 
@@ -4234,6 +4227,8 @@
     <h3>Disfagia</h3>
     <button class="accordion">1. Definición</button>
     <div class="panel">
+<img src="img/Disfagia.svg" alt="Diagrama de Fisiopatología Cardiovascular" style="max-width: 100%; height: auto; display: block; margin: 20px auto;""loading="lazy">
+
       <p>La disfagia es la dificultad o imposibilidad para la deglución normal de líquidos y/o sólidos. Representa un síntoma, no una enfermedad en sí misma, y puede ser manifestación de múltiples patologías. Se clasifica en dos grandes grupos: disfagia orofaríngea (o alta, relacionada con alteraciones en la transferencia del bolo desde la boca a la faringe y esófago proximal) y disfagia esofágica (o baja, relacionada con alteraciones en el transporte del bolo a través del esófago). También puede clasificarse según su etiología en mecánica/obstructiva o motora/funcional.</p>
     </div>
 
@@ -4549,6 +4544,7 @@
     <h3>Acalasia</h3>
     <button class="accordion">1. Definición</button>
     <div class="panel">
+<img src="img/Acalasia.svg" alt="Diagrama de Fisiopatología Cardiovascular" style="max-width: 100%; height: auto; display: block; margin: 20px auto;""loading="lazy">
       <p>La acalasia es un trastorno motor primario del esófago caracterizado por la ausencia de peristalsis en el cuerpo esofágico y una relajación incompleta o ausente del esfínter esofágico inferior (EEI). Esto resulta en una obstrucción funcional al paso de alimentos y líquidos hacia el estómago. Se clasifica en tres tipos según los hallazgos manométricos: tipo I (acalasia clásica), tipo II (con presurización esofágica) y tipo III (espástica).</p>
     </div>
 
@@ -4789,6 +4785,8 @@
     <h3>Estenosis Esofágica</h3>
     <button class="accordion">1. Definición</button>
     <div class="panel">
+<img src="img/Estenosis Esofágica.svg" alt="Diagrama de Fisiopatología Cardiovascular" style="max-width: 100%; height: auto; display: block; margin: 20px auto;""loading="lazy">
+
       <p>La estenosis esofágica es un estrechamiento anormal del lumen esofágico que dificulta o impide el paso de alimentos y líquidos hacia el estómago. Puede ser congénita o adquirida, benigna o maligna, y afectar cualquier segmento del esófago. Las estenosis se clasifican según su etiología (péptica, cáustica, postquirúrgica, actínica, infecciosa, etc.), morfología (simple o compleja) y localización anatómica (proximal, media o distal).</p>
     </div>
 
@@ -5075,6 +5073,7 @@
     <h3>Gastritis</h3>
     <button class="accordion">1. Definición</button>
     <div class="panel">
+<img src="img/Gastritis.svg" alt="Diagrama de Fisiopatología Cardiovascular" style="max-width: 100%; height: auto; display: block; margin: 20px auto;""loading="lazy">
       <p>La gastritis es la inflamación de la mucosa gástrica que puede ser aguda o crónica, y afectar de forma difusa o localizada al estómago. Se clasifica según criterios histológicos, etiológicos, endoscópicos y topográficos. No siempre existe correlación entre los hallazgos histológicos, endoscópicos y la sintomatología clínica.</p>
     </div>
 
@@ -5267,6 +5266,7 @@
     <h3>Úlcera Péptica</h3>
     <button class="accordion">1. Definición</button>
     <div class="panel">
+<img src="img/Úlcera Péptica.svg" alt="Diagrama de Fisiopatología Cardiovascular" style="max-width: 100%; height: auto; display: block; margin: 20px auto;""loading="lazy">
       <p>La úlcera péptica es una lesión en la mucosa del tracto digestivo que se extiende más allá de la muscularis mucosae, produciendo un defecto local con inflamación activa. Puede localizarse en el estómago (úlcera gástrica), en el duodeno (úlcera duodenal) o, con menor frecuencia, en el esófago o el yeyuno. Se caracteriza por un desequilibrio entre los factores agresivos y los mecanismos de defensa de la mucosa gastroduodenal.</p>
     </div>
 
@@ -5459,6 +5459,8 @@
     <h3>Enfermedad por Reflujo Gastroesofágico (ERGE)</h3>
     <button class="accordion">1. Definición</button>
     <div class="panel">
+<img src="img/Enfermedad por Reflujo Gastroesofágico (ERGE).svg" alt="Diagrama de Fisiopatología Cardiovascular" style="max-width: 100%; height: auto; display: block; margin: 20px auto;""loading="lazy">
+
       <p>La enfermedad por reflujo gastroesofágico (ERGE) es una condición que se desarrolla cuando el contenido gástrico refluye hacia el esófago causando síntomas molestos y/o complicaciones. Se define clínicamente como la presencia de síntomas o lesiones esofágicas causadas por el reflujo anormal de contenido gástrico al esófago. La ERGE puede presentarse con síntomas típicos (pirosis, regurgitación), atípicos (tos crónica, asma) o complicaciones (esofagitis, esófago de Barrett).</p>
     </div>
 
@@ -5647,6 +5649,7 @@
     <h3>Diarrea</h3>
     <button class="accordion">1. Definición</button>
     <div class="panel">
+<img src="img/Diarrea.svg" alt="Diagrama de Fisiopatología Cardiovascular" style="max-width: 100%; height: auto; display: block; margin: 20px auto;""loading="lazy">
       <p>La diarrea se define como el aumento en la frecuencia, fluidez y/o volumen de las deposiciones en relación con el hábito intestinal normal de cada persona. Operacionalmente, se considera diarrea cuando hay más de 3 deposiciones al día de consistencia disminuida o un volumen fecal superior a 200 g/día. Se clasifica según su duración en aguda (<14 días), persistente (14-30 días) y crónica (>30 días), y según su mecanismo fisiopatológico en osmótica, secretora, exudativa o por alteración de la motilidad.</p>
     </div>
 
@@ -5841,6 +5844,7 @@
     <h3>Estreñimiento</h3>
     <button class="accordion">1. Definición</button>
     <div class="panel">
+<img src="img/Estreñimiento.svg" alt="Diagrama de Fisiopatología Cardiovascular" style="max-width: 100%; height: auto; display: block; margin: 20px auto;""loading="lazy">
       <p>El estreñimiento es un trastorno digestivo caracterizado por una disminución en la frecuencia de las deposiciones, aumento en la consistencia de las heces y/o dificultad para su evacuación. Según los criterios Roma IV, se define como la presencia de dos o más de los siguientes síntomas, durante al menos 3 meses: menos de 3 deposiciones por semana, esfuerzo excesivo en más del 25% de las deposiciones, heces duras en más del 25% de las deposiciones, sensación de evacuación incompleta, sensación de obstrucción anorrectal, y/o necesidad de maniobras manuales para facilitar la defecación.</p>
     </div>
 
@@ -6033,6 +6037,8 @@
     <h3>Enfermedad Celíaca</h3>
     <button class="accordion">1. Definición</button>
     <div class="panel">
+<img src="img/Enfermedad Celíaca.svg" alt="Diagrama de Fisiopatología Cardiovascular" style="max-width: 100%; height: auto; display: block; margin: 20px auto;""loading="lazy">
+
       <p>La enfermedad celíaca (EC) es un trastorno sistémico de base inmunológica, desencadenado por la ingesta de gluten y prolaminas relacionadas en individuos genéticamente susceptibles. Se caracteriza por la presencia de manifestaciones clínicas variables, anticuerpos específicos, haplotipos HLA-DQ2 y/o DQ8, y enteropatía. El gluten es una proteína presente en trigo, cebada, centeno y, en menor medida, en avena.</p>
     </div>
 
@@ -6234,6 +6240,7 @@
     <h3>Colitis Ulcerativa</h3>
     <button class="accordion">1. Definición</button>
     <div class="panel">
+<img src="img/Colitis Ulcerativa.svg" alt="Diagrama de Fisiopatología Cardiovascular" style="max-width: 100%; height: auto; display: block; margin: 20px auto;""loading="lazy">
       <p>La colitis ulcerativa (CU) es una enfermedad inflamatoria intestinal crónica idiopática que afecta la mucosa del colon de forma continua, comenzando en el recto y extendiéndose proximalmente hasta una extensión variable. Se caracteriza por un curso recurrente de remisiones y exacerbaciones, con inflamación difusa limitada a la mucosa y submucosa, sin granulomas, que causa friabilidad, erosiones y úlceras.</p>
     </div>
 
@@ -6450,6 +6457,7 @@
     <h3>Enfermedad de Crohn</h3>
     <button class="accordion">1. Definición</button>
     <div class="panel">
+<img src="img/Enfermedad de Crohn.svg" alt="Diagrama de Fisiopatología Cardiovascular" style="max-width: 100%; height: auto; display: block; margin: 20px auto;""loading="lazy">
       <p>La enfermedad de Crohn (EC) es una enfermedad inflamatoria intestinal crónica idiopática que puede afectar cualquier segmento del tracto digestivo desde la boca hasta el ano, de forma discontinua (parcheada), transmural (afecta todas las capas de la pared intestinal) y con tendencia a la formación de estenosis, fístulas y abscesos. Se caracteriza por un curso crónico con períodos de actividad y remisión.</p>
     </div>
 
@@ -6699,6 +6707,7 @@
     <h3>Síndrome de Intestino Irritable</h3>
     <button class="accordion">1. Definición</button>
     <div class="panel">
+<img src="img/Síndrome de Intestino Irritable.svg" alt="Diagrama de Fisiopatología Cardiovascular" style="max-width: 100%; height: auto; display: block; margin: 20px auto;""loading="lazy">
       <p>El síndrome de intestino irritable (SII) es un trastorno funcional digestivo crónico caracterizado por dolor o malestar abdominal recurrente asociado a alteraciones en el hábito intestinal (diarrea, estreñimiento o alternancia), en ausencia de anomalías estructurales o bioquímicas detectables. Según los criterios Roma IV, se define como dolor abdominal recurrente, al menos 1 día a la semana en los últimos 3 meses, asociado a dos o más de los siguientes criterios: relación con la defecación, cambio en la frecuencia de las deposiciones y/o cambio en la forma de las heces.</p>
     </div>
 
@@ -6929,6 +6938,7 @@
     <h3>Síndrome de Intestino Corto (SIC)</h3>
     <button class="accordion">1. Definición</button>
     <div class="panel">
+<img src="img/Síndrome de Intestino Corto.svg" alt="Diagrama de Fisiopatología Cardiovascular" style="max-width: 100%; height: auto; display: block; margin: 20px auto;""loading="lazy">
       <p>El síndrome de intestino corto es un cuadro clínico caracterizado por la incapacidad para mantener el balance energético, proteico, hidroelectrolítico y de micronutrientes mediante una dieta convencional, debido a una resección quirúrgica extensa, defectos congénitos o pérdida funcional del intestino delgado. Se considera síndrome de intestino corto cuando queda menos de 150-200 cm de intestino delgado funcional en adultos.</p>
     </div>
 
@@ -7091,6 +7101,7 @@
     <h3>Hepatitis</h3>
     <button class="accordion">1. Definición</button>
     <div class="panel">
+<img src="img/Hepatitis.svg" alt="Diagrama de Fisiopatología Cardiovascular" style="max-width: 100%; height: auto; display: block; margin: 20px auto;""loading="lazy">
       <p>La hepatitis es la inflamación del hígado, que puede ser causada por infecciones virales, consumo excesivo de alcohol, toxinas, medicamentos o enfermedades autoinmunes. La inflamación daña el hígado y puede afectar su función normal. Puede presentarse como hepatitis aguda (de corta duración) o crónica (persistente a largo plazo).</p>
     </div>
 
@@ -7228,6 +7239,7 @@
     <h3>Cirrosis hepática</h3>
     <button class="accordion">1. Definición</button>
     <div class="panel">
+<img src="img/Cirrosis hepática.svg" alt="Diagrama de Fisiopatología Cardiovascular" style="max-width: 100%; height: auto; display: block; margin: 20px auto;""loading="lazy">
       <p>La cirrosis hepática es una enfermedad crónica avanzada del hígado caracterizada por fibrosis extensa y formación de nódulos regenerativos que distorsionan la arquitectura hepática normal. Esta remodelación altera la función hepática y puede conducir a insuficiencia hepática y complicaciones asociadas.</p>
     </div>
 
@@ -7364,6 +7376,7 @@
     <h3>Colecistitis</h3>
     <button class="accordion">1. Definición</button>
     <div class="panel">
+<img src="img/Colecistitis.svg" alt="Diagrama de Fisiopatología Cardiovascular" style="max-width: 100%; height: auto; display: block; margin: 20px auto;""loading="lazy">
       <p>La colecistitis es la inflamación aguda o crónica de la vesícula biliar, generalmente causada por la obstrucción del conducto cístico por cálculos biliares, lo que provoca inflamación, infección y daño tisular.</p>
     </div>
 
@@ -7475,6 +7488,7 @@
     <h3>Colelitiasis</h3>
     <button class="accordion">1. Definición</button>
     <div class="panel">
+<img src="img/Colelitiasis.svg" alt="Diagrama de Fisiopatología Cardiovascular" style="max-width: 100%; height: auto; display: block; margin: 20px auto;""loading="lazy">
       <p>La colelitiasis es la formación de cálculos (piedras) en la vesícula biliar, compuestos principalmente por colesterol o pigmentos biliares. Muchas veces es asintomática y se detecta de forma incidental mediante ecografía abdominal. Sin embargo, puede causar síntomas y complicaciones como cólico biliar, colecistitis, coledocolitiasis, colangitis y pancreatitis litiásica.</p>
     </div>
 
@@ -7572,6 +7586,7 @@
     <h3>Pancreatitis</h3>
     <button class="accordion">1. Definición</button>
     <div class="panel">
+<img src="img/Pancreatitis.svg" alt="Diagrama de Fisiopatología Cardiovascular" style="max-width: 100%; height: auto; display: block; margin: 20px auto;""loading="lazy">
       <p>La pancreatitis es la inflamación del páncreas, que puede ser aguda o crónica. La pancreatitis aguda es una inflamación súbita que puede variar de leve a grave, mientras que la pancreatitis crónica es una inflamación persistente que conduce a fibrosis y pérdida de función pancreática.</p>
     </div>
 
@@ -7696,6 +7711,7 @@
 
     <button class="accordion">1. Definición</button>
     <div class="panel">
+<img src="img/Bocio.svg" alt="Diagrama de Fisiopatología Cardiovascular" style="max-width: 100%; height: auto; display: block; margin: 20px auto;""loading="lazy">
                             <p>El bocio es el aumento del tamaño de la glándula tiroides, que puede ser difuso o nodular, y puede asociarse a una función tiroidea normal, aumentada o disminuida. Es la patología tiroidea de mayor prevalencia mundial y se manifiesta como un agrandamiento visible o palpable en la base del cuello.</p>
                         </div>
 
@@ -7812,7 +7828,7 @@
   <h3>Hipotiroidismo</h3>
   <button class="accordion">1. Definición</button>
   <div class="panel">
-
+<img src="img/Hipotiroidismo.svg" alt="Diagrama de Fisiopatología Cardiovascular" style="max-width: 100%; height: auto; display: block; margin: 20px auto;""loading="lazy">
                             <p>El hipotiroidismo es un síndrome clínico resultante de la deficiencia de hormonas tiroideas o, más raramente, de su resistencia periférica, que produce una disminución generalizada de los procesos metabólicos.</p>
                             <p>Se clasifica como:</p>
                             <ul>
@@ -8086,6 +8102,7 @@
   <h3>Hipertiroidismo</h3>
   <button class="accordion">1. Definición</button>
   <div class="panel">
+<img src="img/Hipertiroidismo.svg" alt="Diagrama de Fisiopatología Cardiovascular" style="max-width: 100%; height: auto; display: block; margin: 20px auto;""loading="lazy">
                             <p>El hipertiroidismo es un síndrome clínico resultante del exceso de hormonas tiroideas circulantes, que produce un estado hipermetabólico generalizado.</p>
                             <p>Se debe distinguir de la tirotoxicosis, que se refiere a cualquier condición con exceso de hormonas tiroideas, independientemente de su origen (tiroideo o extratiroideo).</p>
                             <p>Las causas más frecuentes son la enfermedad de Graves, el bocio multinodular tóxico y el adenoma tóxico.</p>
@@ -8328,7 +8345,9 @@
                     
          <h3>Síndrome de Cushing</h3>
   <button class="accordion">1. Definición</button>
-  <div class="panel">             
+  <div class="panel">   
+<img src="img/Síndrome de Cushing.svg" alt="Diagrama de Fisiopatología Cardiovascular" style="max-width: 100%; height: auto; display: block; margin: 20px auto;""loading="lazy">
+          
                                                 <p>El síndrome de Cushing es un conjunto de signos y síntomas causados por una elevación persistente y excesiva de cortisol en sangre, ya sea por producción endógena aumentada o por administración exógena de glucocorticoides. La enfermedad de Cushing es una forma específica causada por un adenoma hipofisario que produce exceso de hormona adrenocorticotrópica (ACTH), estimulando la producción suprarrenal de cortisol.</p>
                         </div>
 
@@ -8462,6 +8481,7 @@
     <h3>Cancer (Parte 1)</h3>
     <button class="accordion">1. Definición</button>
     <div class="panel">
+<img src="img/Cancer.svg" alt="Diagrama de Fisiopatología Cardiovascular" style="max-width: 100%; height: auto; display: block; margin: 20px auto;""loading="lazy">
       <p>El cáncer es un conjunto de enfermedades caracterizadas por la multiplicación descontrolada de células anormales que pueden invadir tejidos circundantes y diseminarse a otras partes del cuerpo (metástasis). No es una sola enfermedad, sino un grupo heterogéneo con distintos orígenes y comportamientos.</p>
     </div>
 
@@ -8513,6 +8533,7 @@
 
     <button class="accordion">1. Tipos comunes de cáncer</button>
     <div class="panel">
+<img src="img/Cancer1.svg" alt="Diagrama de Fisiopatología Cardiovascular" style="max-width: 100%; height: auto; display: block; margin: 20px auto;""loading="lazy">
       <p>Los cánceres más frecuentes a nivel mundial y en Estados Unidos, con alta incidencia y mortalidad, incluyen:</p>
       <table class="table">
         <thead>
@@ -8650,6 +8671,9 @@
 
     <button class="accordion">1. Definición</button>
     <div class="panel">
+
+<img src="img/Quemaduras.svg" alt="Diagrama de Fisiopatología Cardiovascular" style="max-width: 100%; height: auto; display: block; margin: 20px auto;""loading="lazy">
+
       <p>Las quemaduras graves son lesiones extensas o profundas de la piel y tejidos subyacentes que comprometen una gran superficie corporal o afectan estructuras críticas, poniendo en riesgo la vida del paciente. Estas quemaduras pueden involucrar la destrucción total de la epidermis, dermis, tejido subcutáneo, músculo e incluso hueso.</p>
     </div>
 
@@ -8807,10 +8831,16 @@
 
 
 
-               
+         
+ <footer class="footer" role="contentinfo">
+        <p>Ciudad de la Cultura "Amado Nervo" – Tepic, Nayarit, México</p>
+        <p>© 2025 - Portafolio de Fisiopatología Nutricional | UAN</p>
+    </footer>          
 
         </main>
-        <script src="script.js"></script>
+    
 
     </body>
+</html>
+</body>
 </html>
