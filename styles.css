@@ -1,4 +1,4 @@
-/* Reset y base */
+[⚠️ Suspicious Content] /* Reset y base */
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  /* Gradiente con tonos médicos (azul claro a verde claro) */
+  /* Gradiente con tonos mÃ©dicos (azul claro a verde claro) */
   background: linear-gradient(135deg, #e0f7fa 0%, #e0f2f7 100%); /* Muy claro, azulado a verdoso */
   color: #333; /* Color general del texto (oscuro para legibilidad) */
   min-height: 100vh;
@@ -25,7 +25,7 @@ a {
 .cover {
   max-width: 1100px;
   margin: 40px auto 60px;
-  /* Azul médico semi-transparente */
+  /* Azul mÃ©dico semi-transparente */
   background: rgba(179, 229, 252, 0.2); /* Un azul claro (Light Blue 200) con 20% de opacidad */
   border-radius: 16px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
@@ -79,7 +79,7 @@ a {
   margin-bottom: 8px;
   /* Color cambiado a un azul oscuro para mejor contraste */
   color: #004d40; /* Un teal oscuro */
-  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); /* Sombra más sutil */
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); /* Sombra mÃ¡s sutil */
 }
 
 .main-title p.subtitle {
@@ -107,7 +107,7 @@ a {
   text-align: center;
   /* Color cambiado a un azul oscuro/teal para mejor contraste */
   color: #004d40; /* Un teal oscuro */
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2); /* Sombra más sutil */
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2); /* Sombra mÃ¡s sutil */
 }
 
 .members-list {
@@ -136,13 +136,13 @@ a {
 }
 
 .members-list li i {
-  /* Color de ícono mantenido en azul médico */
+  /* Color de Ã­cono mantenido en azul mÃ©dico */
   color: #00bcd4; /* Cyan 500 */
   font-size: 1.2rem;
 }
 
 .members-list li:hover {
-  /* Color de fondo y texto al pasar el ratón */
+  /* Color de fondo y texto al pasar el ratÃ³n */
   background: #00bcd4; /* Cyan 500 */
   color: #004d40; /* Un teal oscuro para el texto */
   box-shadow: 0 4px 12px rgba(0, 188, 212, 0.7); /* Sombra con el color del hover */
@@ -174,13 +174,13 @@ a {
 }
 
 .info-card i {
-  /* Color de ícono mantenido en azul médico */
+  /* Color de Ã­cono mantenido en azul mÃ©dico */
   color: #00bcd4; /* Cyan 500 */
   font-size: 1.6rem;
 }
 
 .info-card:hover {
-  /* Color de fondo y texto al pasar el ratón */
+  /* Color de fondo y texto al pasar el ratÃ³n */
   background: #00bcd4; /* Cyan 500 */
   color: #004d40; /* Un teal oscuro para el texto */
   box-shadow: 0 4px 12px rgba(0, 188, 212, 0.7); /* Sombra con el color del hover */
@@ -200,7 +200,7 @@ a {
 }
 
 .nutrition-icon-circle {
-  /* Colores cambiados a tonos médicos */
+  /* Colores cambiados a tonos mÃ©dicos */
   background: #00bcd4; /* Cyan 500 */
   color: #004d40; /* Un teal oscuro */
   font-size: 2.8rem;
@@ -211,13 +211,13 @@ a {
   justify-content: center;
   align-items: center;
   margin: 0 auto 8px;
-  box-shadow: 0 4px 12px rgba(0, 188, 212, 0.7); /* Sombra con el color del círculo */
+  box-shadow: 0 4px 12px rgba(0, 188, 212, 0.7); /* Sombra con el color del cÃ­rculo */
   transition: transform 0.3s ease;
 }
 
 .nutrition-icon-container:hover .nutrition-icon-circle {
   transform: scale(1.15);
-  box-shadow: 0 6px 16px rgba(0, 188, 212, 0.9); /* Sombra más intensa */
+  box-shadow: 0 6px 16px rgba(0, 188, 212, 0.9); /* Sombra mÃ¡s intensa */
 }
 
 .nutrition-icon-label {
@@ -230,7 +230,7 @@ a {
 
 /* Footer */
 .footer {
-  background: rgba(0, 0, 0, 0.4); /* Ligeramente más oscuro para contraste */
+  background: rgba(0, 0, 0, 0.4); /* Ligeramente mÃ¡s oscuro para contraste */
   /* Color cambiado a un azul oscuro/teal para mejor contraste */
   color: #004d40; /* Un teal oscuro */
   text-align: center;
@@ -245,7 +245,7 @@ a {
 main {
   max-width: 900px;
   margin: 30px auto;
-  padding: 0 20px; /* Añadir padding horizontal */
+  padding: 0 20px; /* AÃ±adir padding horizontal */
 }
 
 .sistema-card {
@@ -254,23 +254,23 @@ main {
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
   margin: 2rem 0;
   padding: 2rem;
-  /* Borde por defecto - gris médico */
+  /* Borde por defecto - gris mÃ©dico */
   border-left: 10px solid #bdbdbd; /* Gris 400 */
   color: #222; /* Color oscuro para todo el texto dentro de la tarjeta (buena legibilidad) */
   font-family: 'Montserrat', sans-serif; /* Asegurar la fuente */
 }
 
-/* Colores de borde según el sistema - Paleta médica */
-.sistema-cardiovascular { border-left-color: #e57373; } /* Rojo suave médico */
-.sistema-respiratorio { border-left-color: #64b5f6; } /* Azul claro médico */
-.sistema-digestivo { border-left-color: #aed581; } /* Verde claro médico */
-.sistema-endocrino { border-left-color: #ba68c8; } /* Morado suave médico */
-.sistema-excretor { border-left-color: #81c784; } /* Verde médico */
-.sistema-otros { border-left-color: #90a4ae; } /* Gris azulado médico */
+/* Colores de borde segÃºn el sistema - Paleta mÃ©dica */
+.sistema-cardiovascular { border-left-color: #e57373; } /* Rojo suave mÃ©dico */
+.sistema-respiratorio { border-left-color: #64b5f6; } /* Azul claro mÃ©dico */
+.sistema-digestivo { border-left-color: #aed581; } /* Verde claro mÃ©dico */
+.sistema-endocrino { border-left-color: #ba68c8; } /* Morado suave mÃ©dico */
+.sistema-excretor { border-left-color: #81c784; } /* Verde mÃ©dico */
+.sistema-otros { border-left-color: #90a4ae; } /* Gris azulado mÃ©dico */
 
 
 .sistema-card h2 {
-  /* Color azul médico */
+  /* Color azul mÃ©dico */
   color: #0077cc; /* Medical Blue */
   font-size: 22px;
   /* Borde inferior que coincide con el color del H2 */
@@ -281,7 +281,7 @@ main {
 }
 
 .sistema-card h3 {
-  color: #555; /* Color para los subtítulos H3 (mantener para legibilidad) */
+  color: #555; /* Color para los subtÃ­tulos H3 (mantener para legibilidad) */
   font-size: 1.5rem;
   margin-top: 1.5rem;
   margin-bottom: 1rem;
@@ -293,7 +293,7 @@ main {
 .sistema-card ol,
 .sistema-card table {
     font-family: 'Montserrat', sans-serif; /* Aplicar fuente a todo el contenido */
-    color: #444; /* Color de texto más suave (mantener para legibilidad) */
+    color: #444; /* Color de texto mÃ¡s suave (mantener para legibilidad) */
     font-size: 1rem;
     line-height: 1.6;
 }
@@ -301,7 +301,7 @@ main {
 .icon {
   font-size: 30px;
   margin-right: 10px;
-  /* Color azul médico */
+  /* Color azul mÃ©dico */
   color: #0077cc; /* Medical Blue */
 }
 
@@ -314,7 +314,7 @@ main {
   text-align: left;
   border: none;
   outline: none;
-  font-size: 1rem; /* Ajustar tamaño de fuente */
+  font-size: 1rem; /* Ajustar tamaÃ±o de fuente */
   transition: 0.4s;
   margin-bottom: 10px;
   border-radius: 5px;
@@ -322,12 +322,12 @@ main {
 }
 
 .accordion:hover {
-  /* Fondo al pasar el ratón - azul claro médico */
+  /* Fondo al pasar el ratÃ³n - azul claro mÃ©dico */
   background-color: #e3f2fd; /* Light Blue 50 */
 }
 
 .active, .accordion:focus {
-  /* Fondo activo/focus - azul médico */
+  /* Fondo activo/focus - azul mÃ©dico */
   background-color: #0077cc; /* Medical Blue */
   color: white; /* Texto blanco */
 }
@@ -344,12 +344,12 @@ main {
 
 .panel ul {
   list-style-type: disc; /* Usar discos para listas */
-  padding-left: 20px; /* Añadir indentación */
+  padding-left: 20px; /* AÃ±adir indentaciÃ³n */
 }
 
 .panel li {
   padding: 3px 0; /* Ajustar padding */
-  font-size: 1rem; /* Ajustar tamaño de fuente */
+  font-size: 1rem; /* Ajustar tamaÃ±o de fuente */
   color: #666; /* Color de texto (mantener para legibilidad) */
 }
 
@@ -362,11 +362,11 @@ main {
 
 .table, .table th, .table td {
   color: #222; /* Texto oscuro */
-  border: 1px solid #ddd; /* Añadir bordes a las celdas (gris claro) */
+  border: 1px solid #ddd; /* AÃ±adir bordes a las celdas (gris claro) */
 }
 
 .table th {
-  /* Fondo del encabezado de tabla - azul médico */
+  /* Fondo del encabezado de tabla - azul mÃ©dico */
   background-color: #0077cc; /* Medical Blue */
   color: white; /* Texto blanco */
   font-family: 'Montserrat', sans-serif; /* Asegurar la fuente */
@@ -375,9 +375,9 @@ main {
 /* Estilos para el buscador */
 #searchBox {
   width: 80%; /* Ajustar ancho */
-  max-width: 500px; /* Ancho máximo */
+  max-width: 500px; /* Ancho mÃ¡ximo */
   padding: 12px; /* Ajustar padding */
-  font-size: 1rem; /* Ajustar tamaño de fuente */
+  font-size: 1rem; /* Ajustar tamaÃ±o de fuente */
   margin: 20px auto; /* Ajustar margen */
   display: block;
   border: 1px solid #ccc;
@@ -385,7 +385,7 @@ main {
   font-family: 'Montserrat', sans-serif; /* Asegurar la fuente */
 }
 
-/* Estilos para la navegación del índice */
+/* Estilos para la navegaciÃ³n del Ã­ndice */
 header nav ul {
   list-style: none;
   padding: 0;
@@ -393,7 +393,7 @@ header nav ul {
 }
 
 header nav ul li {
-  display: inline-block; /* Mostrar en línea */
+  display: inline-block; /* Mostrar en lÃ­nea */
   margin: 0 10px; /* Ajustar margen */
 }
 
@@ -406,7 +406,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-  /* Color al pasar el mouse - teal médico */
+  /* Color al pasar el mouse - teal mÃ©dico */
   color: #4db6ac; /* Lighter Teal */
 }
 
@@ -491,7 +491,7 @@ header nav ul li a:hover {
     font-size: 0.9rem;
   }
 }
-/* Estilos para el botón del acordeón */
+/* Estilos para el botÃ³n del acordeÃ³n */
 .accordion {
   background-color: #eee; /* Color de fondo por defecto */
   color: #444; /* Color del texto */
@@ -501,12 +501,12 @@ header nav ul li a:hover {
   border: none; /* Sin borde */
   text-align: left; /* Alinea el texto a la izquierda */
   outline: none; /* Elimina el contorno al enfocar */
-  font-size: 18px; /* Tamaño de fuente */
-  transition: 0.4s; /* Transición suave para cambios de estilo */
+  font-size: 18px; /* TamaÃ±o de fuente */
+  transition: 0.4s; /* TransiciÃ³n suave para cambios de estilo */
   margin-top: 5px; /* Espacio superior */
 }
 
-/* Estilo al pasar el mouse sobre el botón o cuando está activo */
+/* Estilo al pasar el mouse sobre el botÃ³n o cuando estÃ¡ activo */
 .accordion:hover, .accordion.active {
   background-color: #ccc; /* Cambia el color de fondo al pasar el mouse o estar activo */
 }
@@ -517,13 +517,13 @@ header nav ul li a:hover {
   background-color: white; /* Fondo del panel */
   max-height: 0; /* Inicialmente oculto */
   overflow: hidden; /* Oculta el contenido que excede maxHeight */
-  transition: max-height 0.2s ease-out; /* Transición suave para la altura */
+  transition: max-height 0.2s ease-out; /* TransiciÃ³n suave para la altura */
 }
 
-/* Puedes añadir un indicador visual (como un + / - o flecha) */
+/* Puedes aÃ±adir un indicador visual (como un + / - o flecha) */
 /* Ejemplo con un pseudo-elemento */
 .accordion:after {
-  content: '\02795'; /* Código para un signo más (+) */
+  content: '\02795'; /* CÃ³digo para un signo mÃ¡s (+) */
   font-size: 13px;
   color: #777;
   float: right; /* Alinea a la derecha */
@@ -531,15 +531,15 @@ header nav ul li a:hover {
 }
 
 .accordion.active:after {
-  content: "\2796"; /* Código para un signo menos (-) cuando está activo */
+  content: "\2796"; /* CÃ³digo para un signo menos (-) cuando estÃ¡ activo */
 }
-/* Estilos para el botón Volver Arriba */
+/* Estilos para el botÃ³n Volver Arriba */
 #backToTopBtn {
   display: none; /* Oculto por defecto */
-  position: fixed; /* Posición fija en la ventana */
+  position: fixed; /* PosiciÃ³n fija en la ventana */
   bottom: 20px; /* A 20px del borde inferior */
   right: 20px; /* A 20px del borde derecho */
-  z-index: 100; /* Asegura que esté por encima de otros elementos */
+  z-index: 100; /* Asegura que estÃ© por encima de otros elementos */
   border: none; /* Sin borde */
   outline: none; /* Sin contorno al enfocar */
   background-color: #007bff; /* Color de fondo (puedes usar tu color principal) */
@@ -547,15 +547,15 @@ header nav ul li a:hover {
   cursor: pointer; /* Cambia el cursor al pasar por encima */
   padding: 15px; /* Espaciado interno */
   border-radius: 50%; /* Forma redonda */
-  font-size: 20px; /* Tamaño del icono */
+  font-size: 20px; /* TamaÃ±o del icono */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil */
-  transition: background-color 0.3s ease; /* Transición suave para el color */
+  transition: background-color 0.3s ease; /* TransiciÃ³n suave para el color */
   text-decoration: none; /* Elimina el subrayado del enlace */
 }
 
-/* Estilo al pasar el mouse sobre el botón */
+/* Estilo al pasar el mouse sobre el botÃ³n */
 #backToTopBtn:hover {
-  background-color: #0056b3; /* Color de fondo más oscuro al pasar el mouse */
+  background-color: #0056b3; /* Color de fondo mÃ¡s oscuro al pasar el mouse */
 }
 .table {
   width: 100%;
