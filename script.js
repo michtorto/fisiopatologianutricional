@@ -61,25 +61,22 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // === Función entrarSitio ===
-    window.entrarSitio = function () {
-        const portada = document.getElementById("portadaAnimada");
-        portada.style.transition = "opacity 1s ease";
-        portada.style.opacity = 0;
-        setTimeout(() => {
-            portada.style.display = "none";
-        }, 1000);
-    };
+  window.entrarSitio = function () {
+    const portada = document.getElementById("portadaAnimada");
+    portada.style.transition = "opacity 1s ease";
+    portada.style.opacity = 0;
+    setTimeout(() => {
+        portada.style.display = "none";
+        // Desplazar automáticamente a la subportada
+        const subportada = document.getElementById("subportada");
+        if (subportada) {
+            subportada.scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+    }, 1000);
+};
 
-    // === Función buscarTexto ===
-    window.buscarTexto = function () {
-        const query = document.getElementById("searchBox").value.toLowerCase();
-        const articulos = document.querySelectorAll("main article");
-        articulos.forEach(article => {
-            const texto = article.textContent.toLowerCase();
-            article.style.display = texto.includes(query) ? "block" : "none";
-        });
-    };
 
     // === Botón Volver Arriba ===
     const backToTopBtn = document.getElementById("backToTopBtn");
@@ -102,3 +99,12 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+window.buscarTexto = function () {
+    const query = document.getElementById("searchBox").value.toLowerCase();
+    const articulos = document.querySelectorAll("main article");
+
+    articulos.forEach(article => {
+        const textoOriginal = article.textContent.toLowerCase();
+        article.style.display = textoOriginal.includes(query) ? "block" : "none";
+    });
+};
