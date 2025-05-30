@@ -1,4 +1,4 @@
-/* Reset y base */
+[⚠️ Suspicious Content] /* Reset y base */
 * {
   margin: 0;
   padding: 0;
@@ -7,8 +7,8 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  /* Gradiente con tonos médicos (azul claro a verde claro) */
-  background: linear-gradient(135deg, #e0f7fa 0%, #e0f2f7 100%);
+  /* Gradiente con tonos mÃ©dicos (azul claro a verde claro) */
+  background: linear-gradient(135deg, #e0f7fa 0%, #e0f2f7 100%); /* Muy claro, azulado a verdoso */
   color: #333; /* Color general del texto (oscuro para legibilidad) */
   min-height: 100vh;
   display: flex;
@@ -21,19 +21,20 @@ a {
   text-decoration: none;
 }
 
-/* ===== Portada ===== */
+/* Estilos de la portada */
 .cover {
   max-width: 1100px;
   margin: 40px auto 60px;
-  background: rgba(179, 229, 252, 0.2); /* Azul médico semi-transparente */
+  /* Azul mÃ©dico semi-transparente */
+  background: rgba(179, 229, 252, 0.2); /* Un azul claro (Light Blue 200) con 20% de opacidad */
   border-radius: 16px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
   padding: 30px 40px;
   backdrop-filter: blur(10px);
-  color: #004d40; /* Teal oscuro */
+  /* Color de texto cambiado a un azul oscuro/teal para mejor contraste */
+  color: #004d40; /* Un teal oscuro */
 }
 
-/* ===== Header ===== */
 .header-top {
   display: flex;
   align-items: center;
@@ -50,7 +51,8 @@ a {
 
 .university-info {
   font-family: 'Lora', serif;
-  color: #0077cc; /* Azul médico */
+  /* Color cambiado a un azul oscuro/teal para mejor contraste */
+  color: #0077cc; /* Medical Blue */
 }
 
 .university-info h3 {
@@ -62,10 +64,9 @@ a {
 .university-info p {
   font-weight: 400;
   font-size: 1rem;
-  opacity: 0.9; /* Mejor legibilidad */
+  opacity: 0.9; /* Aumentada la opacidad para mejor legibilidad */
 }
 
-/* ===== Título principal ===== */
 .main-title {
   text-align: center;
   margin-bottom: 40px;
@@ -76,20 +77,22 @@ a {
   font-weight: 700;
   font-size: 3rem;
   margin-bottom: 8px;
-  color: #004d40; /* Teal oscuro */
-  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); /* Sombra más sutil */
+  /* Color cambiado a un azul oscuro para mejor contraste */
+  color: #004d40; /* Un teal oscuro */
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); /* Sombra mÃ¡s sutil */
 }
 
 .main-title p.subtitle {
   font-size: 1.2rem;
   font-weight: 300;
-  color: #0077cc; /* Azul médico */
+  /* Color cambiado a un azul oscuro para mejor contraste */
+  color: #0077cc; /* Medical Blue */
   font-style: italic;
 }
 
-/* ===== Miembros ===== */
 .members-section {
-  background: rgba(178, 235, 242, 0.2); /* Teal claro semi-transparente */
+  /* Teal claro semi-transparente */
+  background: rgba(178, 235, 242, 0.2); /* Un teal claro (Cyan 200) con 20% de opacidad */
   border-radius: 12px;
   padding: 20px 30px;
   box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.15);
@@ -102,8 +105,9 @@ a {
   font-size: 1.8rem;
   margin-bottom: 20px;
   text-align: center;
-  color: #004d40; /* Teal oscuro */
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  /* Color cambiado a un azul oscuro/teal para mejor contraste */
+  color: #004d40; /* Un teal oscuro */
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2); /* Sombra mÃ¡s sutil */
 }
 
 .members-list {
@@ -115,12 +119,14 @@ a {
 }
 
 .members-list li {
-  background: rgba(178, 235, 242, 0.3); /* Teal claro semi-transparente */
+  /* Teal claro semi-transparente */
+  background: rgba(178, 235, 242, 0.3); /* Un teal claro (Cyan 200) con 30% de opacidad */
   padding: 10px 18px;
   border-radius: 30px;
   font-weight: 600;
   font-size: 1rem;
-  color: #004d40; /* Teal oscuro */
+  /* Color cambiado a un azul oscuro/teal para mejor contraste */
+  color: #004d40; /* Un teal oscuro */
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   display: flex;
   align-items: center;
@@ -130,17 +136,18 @@ a {
 }
 
 .members-list li i {
+  /* Color de Ã­cono mantenido en azul mÃ©dico */
   color: #00bcd4; /* Cyan 500 */
   font-size: 1.2rem;
 }
 
 .members-list li:hover {
+  /* Color de fondo y texto al pasar el ratÃ³n */
   background: #00bcd4; /* Cyan 500 */
-  color: #004d40;
-  box-shadow: 0 4px 12px rgba(0, 188, 212, 0.7);
+  color: #004d40; /* Un teal oscuro para el texto */
+  box-shadow: 0 4px 12px rgba(0, 188, 212, 0.7); /* Sombra con el color del hover */
 }
 
-/* ===== Info Cards ===== */
 .info-grid {
   display: flex;
   justify-content: center;
@@ -150,14 +157,16 @@ a {
 }
 
 .info-card {
-  background: rgba(178, 235, 242, 0.2); /* Teal claro semi-transparente */
+  /* Teal claro semi-transparente */
+  background: rgba(178, 235, 242, 0.2); /* Un teal claro (Cyan 200) con 20% de opacidad */
   border-radius: 12px;
   padding: 20px 30px;
   width: 280px;
   box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.15);
   font-weight: 600;
   font-size: 1.1rem;
-  color: #004d40; /* Teal oscuro */
+  /* Color cambiado a un azul oscuro/teal para mejor contraste */
+  color: #004d40; /* Un teal oscuro */
   display: flex;
   align-items: center;
   gap: 12px;
@@ -165,17 +174,18 @@ a {
 }
 
 .info-card i {
+  /* Color de Ã­cono mantenido en azul mÃ©dico */
   color: #00bcd4; /* Cyan 500 */
   font-size: 1.6rem;
 }
 
 .info-card:hover {
+  /* Color de fondo y texto al pasar el ratÃ³n */
   background: #00bcd4; /* Cyan 500 */
-  color: #004d40;
-  box-shadow: 0 4px 12px rgba(0, 188, 212, 0.7);
+  color: #004d40; /* Un teal oscuro para el texto */
+  box-shadow: 0 4px 12px rgba(0, 188, 212, 0.7); /* Sombra con el color del hover */
 }
 
-/* ===== Iconos de Nutrición ===== */
 .nutrition-icons {
   display: flex;
   justify-content: center;
@@ -190,8 +200,9 @@ a {
 }
 
 .nutrition-icon-circle {
+  /* Colores cambiados a tonos mÃ©dicos */
   background: #00bcd4; /* Cyan 500 */
-  color: #004d40; /* Teal oscuro */
+  color: #004d40; /* Un teal oscuro */
   font-size: 2.8rem;
   width: 70px;
   height: 70px;
@@ -200,26 +211,28 @@ a {
   justify-content: center;
   align-items: center;
   margin: 0 auto 8px;
-  box-shadow: 0 4px 12px rgba(0, 188, 212, 0.7);
+  box-shadow: 0 4px 12px rgba(0, 188, 212, 0.7); /* Sombra con el color del cÃ­rculo */
   transition: transform 0.3s ease;
 }
 
 .nutrition-icon-container:hover .nutrition-icon-circle {
   transform: scale(1.15);
-  box-shadow: 0 6px 16px rgba(0, 188, 212, 0.9);
+  box-shadow: 0 6px 16px rgba(0, 188, 212, 0.9); /* Sombra mÃ¡s intensa */
 }
 
 .nutrition-icon-label {
   font-weight: 600;
-  color: #004d40;
+  /* Color cambiado a un azul oscuro/teal para mejor contraste */
+  color: #004d40; /* Un teal oscuro */
   font-size: 1rem;
   user-select: none;
 }
 
-/* ===== Footer ===== */
+/* Footer */
 .footer {
-  background: rgba(0, 0, 0, 0.4);
-  color: #004d40; /* Teal oscuro */
+  background: rgba(0, 0, 0, 0.4); /* Ligeramente mÃ¡s oscuro para contraste */
+  /* Color cambiado a un azul oscuro/teal para mejor contraste */
+  color: #004d40; /* Un teal oscuro */
   text-align: center;
   padding: 16px 0;
   font-size: 0.9rem;
@@ -228,108 +241,97 @@ a {
   user-select: none;
 }
 
-/* ===== Secciones de sistemas ===== */
+/* Estilos para las secciones de sistemas */
 main {
   max-width: 900px;
   margin: 30px auto;
-  padding: 0 20px; /* Añadir padding horizontal */
+  padding: 0 20px; /* AÃ±adir padding horizontal */
 }
 
 .sistema-card {
-  background: #fff;
+  background: #fff; /* Fondo blanco limpio */
   border-radius: 14px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
   margin: 2rem 0;
   padding: 2rem;
-  border-left: 10px solid #bdbdbd; /* Gris médico */
-  color: #222;
-  font-family: 'Montserrat', sans-serif;
+  /* Borde por defecto - gris mÃ©dico */
+  border-left: 10px solid #bdbdbd; /* Gris 400 */
+  color: #222; /* Color oscuro para todo el texto dentro de la tarjeta (buena legibilidad) */
+  font-family: 'Montserrat', sans-serif; /* Asegurar la fuente */
 }
 
-/* Colores de borde según el sistema */
-.sistema-cardiovascular { border-left-color: #e57373; } /* Rojo suave médico */
-.sistema-respiratorio { border-left-color: #64b5f6; }   /* Azul claro médico */
-.sistema-digestivo { border-left-color: #aed581; }      /* Verde claro médico */
-.sistema-endocrino { border-left-color: #ba68c8; }      /* Morado suave médico */
-.sistema-excretor { border-left-color: #81c784; }       /* Verde médico */
-.sistema-otros { border-left-color: #90a4ae; }          /* Gris azulado médico */
+/* Colores de borde segÃºn el sistema - Paleta mÃ©dica */
+.sistema-cardiovascular { border-left-color: #e57373; } /* Rojo suave mÃ©dico */
+.sistema-respiratorio { border-left-color: #64b5f6; } /* Azul claro mÃ©dico */
+.sistema-digestivo { border-left-color: #aed581; } /* Verde claro mÃ©dico */
+.sistema-endocrino { border-left-color: #ba68c8; } /* Morado suave mÃ©dico */
+.sistema-excretor { border-left-color: #81c784; } /* Verde mÃ©dico */
+.sistema-otros { border-left-color: #90a4ae; } /* Gris azulado mÃ©dico */
+
 
 .sistema-card h2 {
-  color: #0077cc; /* Azul médico */
+  /* Color azul mÃ©dico */
+  color: #0077cc; /* Medical Blue */
   font-size: 22px;
+  /* Borde inferior que coincide con el color del H2 */
   border-bottom: 2px solid #0077cc;
   padding-bottom: 5px;
   margin-bottom: 20px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif; /* Asegurar la fuente */
 }
 
 .sistema-card h3 {
-  color: #555;
+  color: #555; /* Color para los subtÃ­tulos H3 (mantener para legibilidad) */
   font-size: 1.5rem;
   margin-top: 1.5rem;
   margin-bottom: 1rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif; /* Asegurar la fuente */
 }
 
 .sistema-card p,
 .sistema-card ul,
 .sistema-card ol,
 .sistema-card table {
-  font-family: 'Montserrat', sans-serif;
-  color: #444;
-  font-size: 1rem;
-  line-height: 1.6;
+    font-family: 'Montserrat', sans-serif; /* Aplicar fuente a todo el contenido */
+    color: #444; /* Color de texto mÃ¡s suave (mantener para legibilidad) */
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
 .icon {
   font-size: 30px;
   margin-right: 10px;
-  color: #0077cc; /* Azul médico */
+  /* Color azul mÃ©dico */
+  color: #0077cc; /* Medical Blue */
 }
 
-/* ===== Acordeón ===== */
 .accordion {
-  background-color: #f1f1f1;
-  color: #444;
+  background-color: #f1f1f1; /* Fondo claro */
+  color: #444; /* Texto oscuro */
   cursor: pointer;
-  padding: 10px 18px;
+  padding: 10px;
   width: 100%;
   text-align: left;
   border: none;
   outline: none;
-  font-size: 1rem;
+  font-size: 1rem; /* Ajustar tamaÃ±o de fuente */
   transition: 0.4s;
   margin-bottom: 10px;
   border-radius: 5px;
-  font-family: 'Montserrat', sans-serif;
-  margin-top: 5px; /* Espacio superior */
+  font-family: 'Montserrat', sans-serif; /* Asegurar la fuente */
 }
 
-.accordion:hover,
-.accordion.active {
-  background-color: #e3f2fd; /* Azul claro médico */
-  color: #444;
+.accordion:hover {
+  /* Fondo al pasar el ratÃ³n - azul claro mÃ©dico */
+  background-color: #e3f2fd; /* Light Blue 50 */
 }
 
-.active,
-.accordion:focus {
-  background-color: #0077cc; /* Azul médico activo */
-  color: white;
+.active, .accordion:focus {
+  /* Fondo activo/focus - azul mÃ©dico */
+  background-color: #0077cc; /* Medical Blue */
+  color: white; /* Texto blanco */
 }
 
-.accordion:after {
-  content: '\02795'; /* Código para un signo más (+) */
-  font-size: 13px;
-  color: #777;
-  float: right;
-  margin-left: 5px;
-}
-
-.accordion.active:after {
-  content: "\2796"; /* Código para un signo menos (-) */
-}
-
-/* Panel del acordeón */
 .panel {
   max-height: 0;
   overflow: hidden;
@@ -341,48 +343,49 @@ main {
 }
 
 .panel ul {
-  list-style-type: disc;
-  padding-left: 20px;
+  list-style-type: disc; /* Usar discos para listas */
+  padding-left: 20px; /* AÃ±adir indentaciÃ³n */
 }
 
 .panel li {
-  padding: 3px 0;
-  font-size: 1rem;
-  color: #666;
+  padding: 3px 0; /* Ajustar padding */
+  font-size: 1rem; /* Ajustar tamaÃ±o de fuente */
+  color: #666; /* Color de texto (mantener para legibilidad) */
 }
 
 .panel table {
   width: 100%;
   margin-top: 20px;
   border-collapse: collapse;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif; /* Asegurar la fuente */
 }
 
 .table, .table th, .table td {
-  color: #222;
-  border: 1px solid #ddd;
+  color: #222; /* Texto oscuro */
+  border: 1px solid #ddd; /* AÃ±adir bordes a las celdas (gris claro) */
 }
 
 .table th {
-  background-color: #0077cc;
-  color: white;
-  font-family: 'Montserrat', sans-serif;
+  /* Fondo del encabezado de tabla - azul mÃ©dico */
+  background-color: #0077cc; /* Medical Blue */
+  color: white; /* Texto blanco */
+  font-family: 'Montserrat', sans-serif; /* Asegurar la fuente */
 }
 
-/* ===== Buscador ===== */
+/* Estilos para el buscador */
 #searchBox {
-  width: 80%;
-  max-width: 500px;
-  padding: 12px;
-  font-size: 1rem;
-  margin: 20px auto;
+  width: 80%; /* Ajustar ancho */
+  max-width: 500px; /* Ancho mÃ¡ximo */
+  padding: 12px; /* Ajustar padding */
+  font-size: 1rem; /* Ajustar tamaÃ±o de fuente */
+  margin: 20px auto; /* Ajustar margen */
   display: block;
   border: 1px solid #ccc;
   border-radius: 5px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif; /* Asegurar la fuente */
 }
 
-/* ===== Navegación ===== */
+/* Estilos para la navegaciÃ³n del Ã­ndice */
 header nav ul {
   list-style: none;
   padding: 0;
@@ -390,71 +393,170 @@ header nav ul {
 }
 
 header nav ul li {
-  display: inline-block;
-  margin: 0 10px;
+  display: inline-block; /* Mostrar en lÃ­nea */
+  margin: 0 10px; /* Ajustar margen */
 }
 
 header nav ul li a {
-  color: #004d40; /* Teal oscuro */
+  /* Color de enlace cambiado a un azul oscuro/teal para mejor contraste */
+  color: #004d40; /* Un teal oscuro */
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 header nav ul li a:hover {
-  color: #4db6ac;
+  /* Color al pasar el mouse - teal mÃ©dico */
+  color: #4db6ac; /* Lighter Teal */
 }
 
-/* ===== Responsive ===== */
+
+/* Responsive */
 @media (max-width: 768px) {
-  .cover { padding: 20px; margin: 20px auto 40px; }
-  .header-top { flex-direction: column; text-align: center; gap: 12px; }
-  .logo-container img { width: 80px; }
-  .university-info h3 { font-size: 1.5rem; }
-  .university-info p { font-size: 0.9rem; }
-  .main-title h1 { font-size: 2.4rem; }
-  .main-title p.subtitle { font-size: 1rem; }
-  .members-list { flex-direction: column; gap: 12px; }
-  .members-list li { font-size: 0.9rem; }
-  .info-grid { flex-direction: column; gap: 20px; align-items: center; }
-  .info-card { width: 90%; max-width: 350px; font-size: 1rem; }
-  .nutrition-icons { gap: 24px; }
-  .nutrition-icon-circle { font-size: 2rem; width: 60px; height: 60px; }
-  .nutrition-icon-label { font-size: 0.9rem; }
-  main { padding: 0 10px; }
-  .sistema-card { padding: 1.5rem; }
-  .sistema-card h2 { font-size: 1.8rem; }
-  .sistema-card h3 { font-size: 1.3rem; }
-  .panel p, .panel li, .panel table { font-size: 0.9rem; }
-  .accordion { font-size: 0.9rem; }
-  #searchBox { width: 90%; padding: 10px; font-size: 0.9rem; }
+  .cover {
+    padding: 20px;
+    margin: 20px auto 40px;
+  }
+  .header-top {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+  .logo-container img {
+    width: 80px;
+  }
+  .university-info h3 {
+    font-size: 1.5rem;
+  }
+  .university-info p {
+    font-size: 0.9rem;
+  }
+  .main-title h1 {
+    font-size: 2.4rem;
+  }
+  .main-title p.subtitle {
+    font-size: 1rem;
+  }
+  .members-list {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .members-list li {
+    font-size: 0.9rem;
+  }
+  .info-grid {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .info-card {
+    width: 90%;
+    max-width: 350px;
+    font-size: 1rem;
+  }
+  .nutrition-icons {
+    gap: 24px;
+  }
+  .nutrition-icon-circle {
+    font-size: 2rem;
+    width: 60px;
+    height: 60px;
+  }
+  .nutrition-icon-label {
+    font-size: 0.9rem;
+  }
+  main {
+    padding: 0 10px;
+  }
+  .sistema-card {
+    padding: 1.5rem;
+  }
+  .sistema-card h2 {
+    font-size: 1.8rem;
+  }
+  .sistema-card h3 {
+    font-size: 1.3rem;
+  }
+  .panel p,
+  .panel li,
+  .panel table {
+    font-size: 0.9rem;
+  }
+  .accordion {
+    font-size: 0.9rem;
+  }
+  #searchBox {
+    width: 90%;
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+}
+/* Estilos para el botÃ³n del acordeÃ³n */
+.accordion {
+  background-color: #eee; /* Color de fondo por defecto */
+  color: #444; /* Color del texto */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+  padding: 18px; /* Espaciado interno */
+  width: 100%; /* Ocupa todo el ancho disponible */
+  border: none; /* Sin borde */
+  text-align: left; /* Alinea el texto a la izquierda */
+  outline: none; /* Elimina el contorno al enfocar */
+  font-size: 18px; /* TamaÃ±o de fuente */
+  transition: 0.4s; /* TransiciÃ³n suave para cambios de estilo */
+  margin-top: 5px; /* Espacio superior */
 }
 
-/* ===== Estilos para el botón "Volver Arriba" ===== */
+/* Estilo al pasar el mouse sobre el botÃ³n o cuando estÃ¡ activo */
+.accordion:hover, .accordion.active {
+  background-color: #ccc; /* Cambia el color de fondo al pasar el mouse o estar activo */
+}
+
+/* Estilo para el panel de contenido */
+.panel {
+  padding: 0 18px; /* Espaciado interno horizontal */
+  background-color: white; /* Fondo del panel */
+  max-height: 0; /* Inicialmente oculto */
+  overflow: hidden; /* Oculta el contenido que excede maxHeight */
+  transition: max-height 0.2s ease-out; /* TransiciÃ³n suave para la altura */
+}
+
+/* Puedes aÃ±adir un indicador visual (como un + / - o flecha) */
+/* Ejemplo con un pseudo-elemento */
+.accordion:after {
+  content: '\02795'; /* CÃ³digo para un signo mÃ¡s (+) */
+  font-size: 13px;
+  color: #777;
+  float: right; /* Alinea a la derecha */
+  margin-left: 5px;
+}
+
+.accordion.active:after {
+  content: "\2796"; /* CÃ³digo para un signo menos (-) cuando estÃ¡ activo */
+}
+/* Estilos para el botÃ³n Volver Arriba */
 #backToTopBtn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 100;
-  border: none;
-  outline: none;
-  background-color: #007bff;
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 50%;
-  font-size: 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease;
-  text-decoration: none;
+  display: none; /* Oculto por defecto */
+  position: fixed; /* PosiciÃ³n fija en la ventana */
+  bottom: 20px; /* A 20px del borde inferior */
+  right: 20px; /* A 20px del borde derecho */
+  z-index: 100; /* Asegura que estÃ© por encima de otros elementos */
+  border: none; /* Sin borde */
+  outline: none; /* Sin contorno al enfocar */
+  background-color: #007bff; /* Color de fondo (puedes usar tu color principal) */
+  color: white; /* Color del icono */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+  padding: 15px; /* Espaciado interno */
+  border-radius: 50%; /* Forma redonda */
+  font-size: 20px; /* TamaÃ±o del icono */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+  transition: background-color 0.3s ease; /* TransiciÃ³n suave para el color */
+  text-decoration: none; /* Elimina el subrayado del enlace */
 }
 
+/* Estilo al pasar el mouse sobre el botÃ³n */
 #backToTopBtn:hover {
-  background-color: #0056b3;
+  background-color: #0056b3; /* Color de fondo mÃ¡s oscuro al pasar el mouse */
 }
-
-/* ===== Tablas ===== */
 .table {
   width: 100%;
   overflow-x: auto;
@@ -463,21 +565,20 @@ header nav ul li a:hover {
   margin-top: 10px;
 }
 
-.table th, .table td {
+.table th,
+.table td {
   padding: 8px 12px;
   border: 1px solid #ccc;
   text-align: left;
 }
-
-/* ===== Header sticky ===== */
 .page-header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(255, 255, 255, 0.95); /* fondo blanco semi-transparente */
   padding: 15px 0;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px); /* efecto elegante */
 }
 
 .page-header nav ul a {
@@ -489,8 +590,7 @@ header nav ul li a:hover {
 .page-header nav ul a:hover {
   color: #004d40;
 }
-
-/* ===== Portada animada ===== */
+/* Portada animada */
 .portada-animada {
   position: fixed;
   top: 0;
@@ -551,4 +651,148 @@ header nav ul li a:hover {
 @keyframes zoomIn {
   0% { transform: scale(0.85); opacity: 0; }
   100% { transform: scale(1); opacity: 1; }
+}
+.accordion {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.accordion:focus-visible {
+  outline: 2px dashed #0077cc;
+  outline-offset: 4px;
+}
+@media (max-width: 480px) {
+  .main-title h1 {
+    font-size: 2rem;
+  }
+
+  .members-list {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+.flecha-indice {
+  display: block;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 30px;
+  text-align: center;
+  font-size: 2rem;
+  background-color: #00bcd4;
+  color: white;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  line-height: 60px;
+  transition: transform 0.3s ease;
+}
+
+.flecha-indice:hover {
+  transform: translateY(5px);
+  background-color: #0077cc;
+}
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  padding: 10px 20px;
+  background-color: #e0f2f7;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #0077cc;
+  transition: background-color 0.3s;
+}
+
+.tab-button.active,
+.tab-button:hover {
+  background-color: #0077cc;
+  color: #fff;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+#backToTopBtn {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  font-size: 1.5rem;
+  background-color: #0077cc;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  display: none;
+  z-index: 1000;
+}
+#backToTopBtn.show {
+  display: block;
+}
+// Al final del script.js
+window.addEventListener("scroll", () => {
+    const secciones = document.querySelectorAll("main section");
+    const links = document.querySelectorAll("nav a");
+
+    let current = "";
+    secciones.forEach(section => {
+        const sectionTop = section.offsetTop;
+        if (pageYOffset >= sectionTop - 100) {
+            current = section.getAttribute("id");
+        }
+    });
+
+    links.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === `#${current}`) {
+            link.classList.add("active");
+        }
+    });
+});
+nav a.active {
+  font-weight: bold;
+  color: #0077cc;
+  border-bottom: 2px solid #0077cc;
+}
+.nav-sistemas {
+  background-color: #004d40;
+  padding: 10px 0;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-sistemas ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.nav-sistemas li a {
+  color: #ffffff;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.nav-sistemas li a:hover,
+.nav-sistemas li a.active {
+  background-color: #00bcd4;
+  color: #004d40;
 }
