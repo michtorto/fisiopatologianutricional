@@ -795,3 +795,74 @@ nav a.active {
   background-color: #00bcd4;
   color: #004d40;
 }
+/* styles.css */
+
+/* ... (tu CSS existente) ... */
+
+/* Estilos para el nuevo contenedor principal */
+.main-layout-container {
+    display: flex; /* Habilita Flexbox */
+    flex-direction: row; /* Coloca los elementos en fila (uno al lado del otro) */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 1200px; /* Opcional: limita el ancho máximo */
+    margin: 20px auto; /* Centra el contenedor */
+    gap: 20px; /* Espacio entre el contenido principal y el índice */
+}
+
+/* Estilos para el contenido principal (la subportada) */
+.main-layout-container #subportada {
+    flex-grow: 1; /* Permite que el contenido principal ocupe el espacio restante */
+    /* Puedes añadir un ancho base si lo necesitas, por ejemplo: flex-basis: 70%; */
+}
+
+/* Estilos para el índice (la barra lateral) */
+.main-layout-container #indice {
+    width: 250px; /* Define un ancho fijo para el índice */
+    flex-shrink: 0; /* Evita que el índice se encoja */
+    /* Puedes ajustar el ancho según cuánto espacio quieras para el índice */
+    padding: 15px; /* Añade algo de relleno */
+    border-left: 1px solid #ccc; /* Opcional: una línea separadora */
+    /* Ajusta los estilos internos del índice si es necesario */
+}
+
+/* Estilos para la lista del índice en la barra lateral */
+.main-layout-container #indice nav ul {
+    flex-direction: column; /* Cambia la dirección de los elementos de la lista a columna */
+    align-items: flex-start; /* Alinea los elementos a la izquierda */
+    gap: 10px; /* Espacio entre los elementos de la lista */
+}
+
+/* Estilos para la barra de búsqueda dentro del índice */
+.main-layout-container #indice #searchBox {
+    width: 95%; /* Ajusta el ancho de la barra de búsqueda */
+    max-width: none; /* Elimina la limitación de ancho máximo si existía */
+    box-sizing: border-box; /* Incluye padding y borde en el ancho */
+}
+
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) { /* Ajusta el breakpoint si es necesario */
+    .main-layout-container {
+        flex-direction: column; /* Vuelve a apilar los elementos en columna en pantallas pequeñas */
+        gap: 0; /* Elimina el espacio entre ellos */
+    }
+
+    .main-layout-container #indice {
+        width: 100%; /* El índice ocupa todo el ancho */
+        border-left: none; /* Elimina la línea separadora lateral */
+        border-top: 1px solid #ccc; /* Opcional: añade una línea superior */
+        padding: 10px 0; /* Ajusta el padding */
+    }
+
+     .main-layout-container #indice nav ul {
+        flex-direction: row; /* Vuelve a poner los enlaces en fila en pantallas pequeñas */
+        justify-content: center; /* Centra los enlaces */
+        gap: 15px; /* Espacio entre los enlaces */
+        padding: 0 10px; /* Añade padding horizontal */
+    }
+
+    .main-layout-container #indice h1 {
+        margin-top: 10px; /* Ajusta el margen superior del título del índice */
+    }
+}
+
