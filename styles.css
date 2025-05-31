@@ -6,19 +6,23 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  /* Gradiente con tonos mÃ©dicos (azul claro a verde claro) */
-  background: linear-gradient(135deg, #e0f7fa 0%, #e0f2f7 100%); /* Muy claro, azulado a verdoso */
+  /* ... otros estilos ... */
+  font-size: 1rem; /* Asegura un tamaño base legible, 1rem = 16px por defecto */
+  line-height: 1.6; /* Espaciado entre líneas para mejorar la legibilidad de párrafos largos */
   color: #333; /* Color general del texto (oscuro para legibilidad) */
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+/* Puedes ajustar el tamaño para elementos específicos si es necesario */
+p {
+  font-size: 1rem; /* O puedes dejar que herede del body */
+  margin-bottom: 1em; /* Espacio entre párrafos */
 }
+
+li {
+  font-size: 1rem; /* O heredar */
+  margin-bottom: 0.5em; /* Espacio entre ítems de lista */
+}
+
 
 /* Estilos de la portada */
 .cover {
