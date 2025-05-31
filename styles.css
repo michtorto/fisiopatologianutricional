@@ -916,3 +916,84 @@ th {
 tr:nth-child(even) {
   background-color: #f9f9f9;
 }
+.nav-sistemas {
+  background-color: var(--color-medical-blue-dark, #004d40); /* Un color de fondo oscuro para contraste */
+  padding: 10px 20px; /* Espaciado interno arriba/abajo y a los lados */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Una ligera sombra para darle profundidad */
+  margin-bottom: 20px; /* Espacio debajo de la barra de navegación */
+  /* Si es horizontal (como estaba por defecto), puedes centrar el contenido */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+
+  /* Si la hiciste lateral (como sugerí antes), ajusta estos estilos */
+  /* width: 200px; */
+  /* margin-right: 30px; */
+  /* flex-shrink: 0; */
+  /* background-color: #f9f9f9; */ /* Un fondo más claro para un lateral */
+  /* padding: 20px 10px; */
+  /* position: sticky; */
+  /* top: 20px; */
+  /* height: calc(100vh - 40px); */
+  /* overflow-y: auto; */
+}
+.nav-sistemas li {
+  /* Si es horizontal, el gap en el ul ya maneja el espacio */
+  /* Si es lateral */
+  /* margin-bottom: 10px; */ /* Espacio vertical entre ítems */
+}
+.nav-sistemas a {
+  text-decoration: none; /* Quita el subrayado por defecto */
+  color: white; /* Color del texto (contraste con el fondo oscuro) */
+  font-weight: bold; /* Texto en negrita */
+  padding: 8px 15px; /* Espaciado interno para hacer el área clickeable más grande */
+  display: block; /* Hace que todo el padding sea parte del área clickeable */
+  border-radius: 4px; /* Bordes ligeramente redondeados */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave para efectos hover/active */
+}
+
+/* Si la navegación es lateral, puedes usar un color de texto oscuro y un fondo claro */
+/* .nav-sistemas a {
+  color: var(--color-medical-blue-dark, #004d40);
+  background-color: transparent;
+} */
+.nav-sistemas a:hover {
+  background-color: var(--color-medical-blue-accent, #0077cc); /* Un color de fondo diferente al pasar el ratón */
+  color: white; /* Asegura que el texto siga siendo legible */
+}
+
+/* Si la navegación es lateral, el hover podría ser solo un cambio de fondo claro */
+/* .nav-sistemas a:hover {
+  background-color: var(--color-medical-blue-light, #e0f7fa);
+  color: var(--color-medical-blue-dark, #004d40);
+} */
+.nav-sistemas a.active-link {
+  background-color: var(--color-medical-blue-accent, #0077cc); /* Un color de fondo distintivo */
+  color: white; /* Texto blanco */
+  cursor: default; /* Cambia el cursor para indicar que no es necesario hacer clic */
+}
+
+/* Si la navegación es lateral */
+/* .nav-sistemas a.active-link {
+  background-color: var(--color-medical-blue-accent, #0077cc);
+  color: white;
+  font-weight: bold;
+} */
+@media (max-width: 768px) {
+  .nav-sistemas {
+    padding: 10px; /* Reduce el padding */
+    margin-bottom: 15px;
+  }
+
+  .nav-sistemas ul {
+    flex-direction: column; /* Apila los enlaces verticalmente */
+    gap: 5px; /* Reduce el espacio entre ellos */
+    align-items: stretch; /* Hace que los enlaces ocupen todo el ancho disponible */
+  }
+
+  .nav-sistemas a {
+    text-align: center; /* Centra el texto en los botones apilados */
+    padding: 10px; /* Ajusta el padding */
+  }
+}
+
