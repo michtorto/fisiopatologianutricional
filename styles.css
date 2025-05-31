@@ -869,4 +869,16 @@ nav a.active {
         margin-top: 10px; /* Ajusta el margen superior del título del índice */
     }
 }
+/* Asegura que el texto largo se rompa y se ajuste en el contenedor */
+p, li, td, th {
+  word-wrap: break-word; /* Para navegadores antiguos */
+  overflow-wrap: break-word; /* La propiedad estándar */
+}
+
+/* Opcional: Si tienes contenedores con anchos fijos muy estrechos */
+.some-container-class {
+  /* ... otros estilos ... */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
 
