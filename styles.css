@@ -996,4 +996,96 @@ tr:nth-child(even) {
     padding: 10px; /* Ajusta el padding */
   }
 }
+/* styles.css */
+
+#indice.page-header {
+  background-color: #f8f8f8; /* Un fondo ligeramente gris para diferenciar la sección */
+  padding: 30px 20px; /* Espaciado interno */
+  margin-bottom: 30px; /* Espacio debajo de la sección del índice */
+  border-bottom: 1px solid #eee; /* Una línea sutil en la parte inferior */
+  text-align: center; /* Centra todo el contenido dentro del header */
+}
+
+/* Estilos para el título "Índice" */
+#indice.page-header h1 {
+  color: var(--color-medical-blue-dark, #004d40); /* Color del título */
+  margin-top: 0; /* Elimina el margen superior por defecto */
+  margin-bottom: 20px; /* Espacio debajo del título */
+  font-size: 2.5em; /* Tamaño de fuente más grande para el título principal */
+}
+#searchBox {
+  padding: 12px 15px; /* Ajusta el padding */
+  width: 80%;
+  max-width: 500px;
+  border-radius: 25px; /* Bordes más redondeados (estilo "pastilla") */
+  border: 1px solid var(--color-medical-blue-light, #b2ebf2); /* Borde con color de la paleta */
+  font-size: 1.1em; /* Tamaño de fuente un poco más grande */
+  outline: none; /* Quita el contorno al hacer clic (lo manejaremos con focus) */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+  margin-bottom: 20px; /* Espacio debajo de la caja de búsqueda */
+}
+
+#searchBox:focus {
+  border-color: var(--color-medical-blue-accent, #0077cc); /* Color del borde al enfocar */
+  box-shadow: 0 0 8px rgba(0, 119, 204, 0.2); /* Sombra suave al enfocar */
+}
+
+#indice nav ul {
+  display: flex; /* Usa flexbox */
+  flex-wrap: wrap; /* Permite que los ítems salten de línea */
+  justify-content: center; /* Centra los ítems horizontalmente */
+  gap: 15px; /* Espacio entre los ítems */
+  list-style: none; /* Quita los puntos de la lista */
+  padding: 0; /* Quita el padding por defecto */
+  margin: 0; /* Quita el margen por defecto */
+}
+#indice nav li {
+  /* No se necesita mucho aquí si el gap del ul es suficiente */
+  /* margin: 5px; */ /* Si quieres un margen adicional alrededor de cada ítem */
+}
+#indice nav a {
+  display: inline-block; /* O display: block; si quieres que ocupen más área */
+  background-color: var(--color-medical-blue-light, #e0f7fa); /* Fondo claro */
+  color: var(--color-medical-blue-dark, #004d40); /* Color del texto oscuro */
+  text-decoration: none; /* Quita el subrayado */
+  padding: 10px 20px; /* Espaciado interno */
+  border-radius: 20px; /* Bordes redondeados para un estilo de "etiqueta" o "botón" */
+  font-weight: bold; /* Texto en negrita */
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; /* Transición suave */
+  border: 1px solid var(--color-medical-blue-light, #e0f7fa); /* Borde inicial del mismo color que el fondo */
+}
+
+/* Estilos para los emojis dentro de los enlaces (opcional) */
+#indice nav a span.emoji {
+    margin-right: 8px; /* Espacio entre el emoji y el texto */
+}
+#indice nav a:hover {
+  background-color: var(--color-medical-blue-accent, #0077cc); /* Fondo de color de acento */
+  color: white; /* Texto blanco */
+  border-color: var(--color-medical-blue-accent, #0077cc); /* Borde del mismo color */
+  transform: translateY(-2px); /* Ligeramente hacia arriba */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+@media (max-width: 600px) {
+  #indice.page-header {
+    padding: 20px 10px; /* Reduce el padding en pantallas pequeñas */
+  }
+
+  #indice.page-header h1 {
+    font-size: 2em; /* Reduce el tamaño del título */
+  }
+
+  #searchBox {
+    width: 95%; /* Ocupa más ancho */
+  }
+
+  #indice nav ul {
+    gap: 10px; /* Reduce el espacio entre ítems */
+  }
+
+  #indice nav a {
+    padding: 8px 15px; /* Reduce el padding de los enlaces */
+    font-size: 0.9em; /* Reduce el tamaño de fuente */
+  }
+}
 
