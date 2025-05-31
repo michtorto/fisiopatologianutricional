@@ -514,13 +514,18 @@ header nav ul li a:hover {
   background-color: #ccc; /* Cambia el color de fondo al pasar el mouse o estar activo */
 }
 
-/* Estilo para el panel de contenido */
 .panel {
-  padding: 0 18px; /* Espaciado interno horizontal */
-  background-color: white; /* Fondo del panel */
+  padding: 0 18px;
+  background-color: white; /* O el color que desees para el fondo del panel */
   max-height: 0; /* Inicialmente oculto */
-  overflow: hidden; /* Oculta el contenido que excede maxHeight */
-  transition: max-height 0.2s ease-out; /* TransiciÃ³n suave para la altura */
+  overflow: hidden; /* Oculta el contenido que se desborda */
+  transition: max-height 0.2s ease-out; /* Animación suave al abrir/cerrar */
+}
+
+/* Clase que JavaScript añade cuando el panel está activo/abierto */
+.panel.active {
+  max-height: 1000px; /* Un valor lo suficientemente grande para mostrar todo el contenido */
+  /* O puedes usar: max-height: fit-content; si tu CSS lo soporta y no necesitas la animación */
 }
 
 /* Puedes aÃ±adir un indicador visual (como un + / - o flecha) */
@@ -888,28 +893,26 @@ p, li, td, th {
   margin: 20px 0; /* Espacio arriba y abajo de la tabla */
 }
 
-/* Estilos para la tabla misma */
+/* Menos recomendado, pero puede funcionar en algunos casos */
 table {
-  width: 100%; /* Intenta ocupar el 100% del contenedor */
-  border-collapse: collapse; /* Elimina el espacio entre bordes de celdas */
-  min-width: 600px; /* Opcional: Asegura un ancho mínimo si la tabla es pequeña pero quieres un formato consistente */
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  overflow-x: auto; /* Puede que no funcione como esperas en todos los navegadores/casos */
+  display: block; /* A veces necesario para que overflow funcione en tablas */
 }
 
 th, td {
-  border: 1px solid #ddd; /* Borde simple para las celdas */
-  padding: 12px; /* Espaciado interno en las celdas */
-  text-align: left; /* Alineación del texto */
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
 }
 
 th {
-  background-color: #f2f2f2; /* Color de fondo para encabezados */
+  background-color: #f2f2f2;
   font-weight: bold;
 }
 
 tr:nth-child(even) {
-  background-color: #f9f9f9; /* Color de fondo alternado para filas */
+  background-color: #f9f9f9;
 }
-
-/* Opcional: Estilos para que la primera columna sea fija en desplazamiento horizontal */
-/* Esto requiere JavaScript o técnicas CSS más avanzadas, pero es una mejora de usabilidad para tablas grandes */
-
