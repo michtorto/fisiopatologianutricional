@@ -881,4 +881,35 @@ p, li, td, th {
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
+/* Estilo para el contenedor de la tabla para permitir desplazamiento horizontal */
+.table-container {
+  width: 100%; /* Ocupa todo el ancho disponible */
+  overflow-x: auto; /* Añade una barra de desplazamiento horizontal si el contenido es muy ancho */
+  margin: 20px 0; /* Espacio arriba y abajo de la tabla */
+}
+
+/* Estilos para la tabla misma */
+table {
+  width: 100%; /* Intenta ocupar el 100% del contenedor */
+  border-collapse: collapse; /* Elimina el espacio entre bordes de celdas */
+  min-width: 600px; /* Opcional: Asegura un ancho mínimo si la tabla es pequeña pero quieres un formato consistente */
+}
+
+th, td {
+  border: 1px solid #ddd; /* Borde simple para las celdas */
+  padding: 12px; /* Espaciado interno en las celdas */
+  text-align: left; /* Alineación del texto */
+}
+
+th {
+  background-color: #f2f2f2; /* Color de fondo para encabezados */
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9; /* Color de fondo alternado para filas */
+}
+
+/* Opcional: Estilos para que la primera columna sea fija en desplazamiento horizontal */
+/* Esto requiere JavaScript o técnicas CSS más avanzadas, pero es una mejora de usabilidad para tablas grandes */
 
