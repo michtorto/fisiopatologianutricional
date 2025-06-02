@@ -1,51 +1,23 @@
+// Arreglo de páginas
 const paginas = [
-  {
-    titulo: "Inicio",
-    url: "index.html",
-    descripcion: "Página principal del sitio web."
-  },
-  {
-    titulo: "Otros Temas",
-    url: "otros.html",
-    descripcion: "Sección de otros temas relacionados."
-  },
-  {
-    titulo: "Sistema Excretor",
-    url: "excretor.html",
-    descripcion: "Información sobre el sistema excretor."
-  },
-  {
-    titulo: "Sistema Endocrino",
-    url: "endocrino.html",
-    descripcion: "Información sobre el sistema endocrino."
-  },
-  {
-    titulo: "Sistema Respiratorio",
-    url: "respiratorio.html",
-    descripcion: "Información sobre el sistema respiratorio."
-  },
-  {
-    titulo: "Sistema Digestivo",
-    url: "digestivo.html",
-    descripcion: "Información sobre el sistema digestivo."
-  },
-  {
-    titulo: "Sistema Cardiovascular",
-    url: "cardiovascular.html",
-    descripcion: "Información sobre el sistema cardiovascular."
-  }
-  // Puedes agregar más páginas aquí si las creas después
+  { titulo: "Inicio", url: "index.html", descripcion: "Página principal del sitio web." },
+  { titulo: "Otros Temas", url: "otros.html", descripcion: "Sección de otros temas relacionados." },
+  { titulo: "Sistema Excretor", url: "excretor.html", descripcion: "Información sobre el sistema excretor." },
+  { titulo: "Sistema Endocrino", url: "endocrino.html", descripcion: "Información sobre el sistema endocrino." },
+  { titulo: "Sistema Respiratorio", url: "respiratorio.html", descripcion: "Información sobre el sistema respiratorio." },
+  { titulo: "Sistema Digestivo", url: "digestivo.html", descripcion: "Información sobre el sistema digestivo." },
+  { titulo: "Sistema Cardiovascular", url: "cardiovascular.html", descripcion: "Información sobre el sistema cardiovascular." }
 ];
 
-// ... (deja tu arreglo de patologias igual que en tu código original)
+// Pega aquí tu arreglo de patologias (no lo repito aquí por espacio, pero usa el tuyo completo)
+const patologias = [
+  // ... tu arreglo de patologías ...
+];
 
-const patologias = [/* ... aquí va tu arreglo de patologías ... */];
-
-// Solo una vez obtenemos los elementos del DOM
+// Selección de elementos y evento
 const input = document.getElementById('buscador');
 const resultados = document.getElementById('resultados-busqueda');
 
-// Un solo event listener para ambas búsquedas
 input.addEventListener('input', function() {
   const texto = input.value.toLowerCase();
   resultados.innerHTML = '';
